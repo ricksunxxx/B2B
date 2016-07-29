@@ -1,0 +1,20 @@
+@import "helpers/variables";
+@import "helpers/placeholder";
+@import "ui/step";
+@import "ui/upload";
+@import "ui/tipbox";
+@import "pages/login";
+@import "pages/register";
+@import "pages/retrieve";
+@import "pages/bindmobile";
+
+
+.passport-step {
+	width: 800px;
+	margin: 80px auto;
+}
+
+
+
+
+

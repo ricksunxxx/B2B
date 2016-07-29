@@ -1,0 +1,185 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 主头部 */
+.m-header {
+	width: 100%;
+	min-height: 40px;
+	max-height: 70px;
+	background: #013566;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+
+	&.pinched {
+		.m-header-logo {
+			margin-top: 0;
+		}
+	}
+
+	&.s-m-header {
+		height: 70px;
+
+		.m-header-info-item {
+			position: relative;
+		
+			&:after {
+				position: absolute;
+				top: 10px;
+				left: -2px;
+				content: " ";
+				height: 12px;
+				border-left: 1px solid #fff;
+			}
+
+			&:first-child {
+				&:after {
+					border: none;
+				}
+			}
+
+			.icon-message {
+				padding: 0;
+				font-size: 18px;
+				vertical-align: top;
+				&:after,
+				&:before {
+					content: '';
+					display: none;
+				}
+			}
+		}
+	}
+}
+.m-header.ui-fixed {
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.m-header.ui-fixed ~ .ui-page-body {
+	padding-top: 70px;
+}
+
+.m-header-logo-wrap {
+	float: left;
+	width: 294px;
+	overflow: hidden;
+	
+	.m-header-logo {
+		font-size: 0;
+		margin-top: 8px;
+	}
+}
+
+.m-header-right {
+	float: right;
+	width: 868px;
+	height: 100%;
+}
+.m-header-nav {
+	float: left;
+	padding: 0 0 0 100px;
+}
+
+.m-header-nav-list {
+	height: 40px;
+}
+
+.m-header-nav-item {
+	float: left;
+	margin-right: 30px;
+
+	a {
+		font-size: 14px;
+		line-height: 40px;
+		padding: 10px 15px;
+		color: #fff;
+
+		&:hover {
+			color: #00d8ff;
+			text-decoration: none;
+		}
+	}
+}
+
+.m-header-info {
+	width: 100%;
+	height: 30px;
+}
+
+.m-header-info-list,
+.m-header-search {
+	float: right;
+}
+
+.m-header-info-list {
+	@extend %clear;
+}
+.ie8 {
+	.m-header-info-list {
+		margin-right: -9px;
+	}
+}
+.m-header-info-item {
+	display: inline-block;
+	padding: 0 9px 0 10px;
+	line-height: 30px;
+	color: #fff;
+	
+	&.last,
+	&:last-child {
+		padding-right: 0;
+	}
+
+	.iconfont {
+		font-size: 13px;
+
+		&.cart {
+			font-size: 15px;
+		}
+	}
+	
+	a,
+	.link {
+		color: #fff;
+		&:hover {
+			color: #00d8ff;
+			text-decoration: none;
+		}
+	}
+	.back {
+		color: #327abd;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.m-header-search-inner {
+	position: relative;
+	width: 184px;
+    height: 26px;
+    line-height: 26px;
+    background: #fff;
+    margin-top: 4px;
+    border-radius: 3px;
+    overflow: hidden;
+
+    label.iconfont {
+    	position: absolute;
+    	left: 5px;
+    	top: 1px;
+    	color: #666;
+    }
+}
+.pinched {
+	.m-header-search-inner {
+		margin-top: 7px;    		
+	}
+}
+.m-header-search-input {
+	width: 153px;
+	height: 18px;
+	margin-left: 1px;
+	padding: 3px 5px 3px 24px;
+	border: none;
+}

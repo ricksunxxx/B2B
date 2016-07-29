@@ -1,0 +1,96 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/*分销商会员中心 采购管理组*/
+
+
+/*  已采购商品管理*/
+
+.member-tabs-purchase {
+    .member-purchase {
+        position: relative;
+        .member-purchase-select-all {
+            position: absolute;
+            left: 10px;
+            top: 7px;
+            z-index: 2;
+            .checkbox-all {
+                vertical-align: top;
+                margin-top: 3px;
+            }
+        }
+    }
+    // .ui-panel-text-inner {
+    //     a {
+    //         display: block;
+    //         width: 100%;
+    //         text-overflow: ellipsis;
+    //         white-space: nowrap;
+    //         overflow: hidden;
+    //     }
+    // }
+    .table-group-bd .colspan {
+       padding: 10px!important 0;
+    }
+    .table-group-hd a {
+        color: #0ae;
+    }
+}
+
+//我的关注
+.member-attention {
+    .ui-panel-text-inner {
+        a {
+            display: block;
+            width: 100%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .member-form-col3 .ui-form-item {
+        padding-left: 80px;
+    }
+    .member-form-col3 .member-form-query-btns {
+        padding-right: 14px;
+    }
+    .member-tabs-hd {
+        .btn-batch-del {
+            &:hover {
+                color: #fff;
+                border: 1px solid #d66500;
+                background-color: #fb8318;
+            }
+        }
+        // .btn-in-cart {
+        //     &:hover {
+        //         border: 1px solid #179ED4;
+        //         background-color: #00AAEE;
+        //         color: #fff;
+        //     }
+        // }
+        // .btn-download {
+        //     padding: 0 24px;
+        //     &:hover {
+        //         border: 1px solid #179ED4;
+        //         background-color: #00AAEE;
+        //         color: #fff;
+        //     }
+        // }
+        // .btn-attention-batch {
+        //     &:hover {
+        //         border: 1px solid #179ED4;
+        //         background-color: #00AAEE;
+        //         color: #fff;
+        //     }
+        // }
+    }
+    .ui-table {
+        border: none;
+    }
+}
+
+h3.member-head-title span.inner-desc {
+    font-size: 14px;
+    color: #757575;
+}

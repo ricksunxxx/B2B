@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>uploader</title>
+<link href="http://www.papago.hk" rel="dns-prefetch" />
+<link rel="stylesheet" href="../dist/css/common.css">
+<style>
+body{width:100%;min-width:100px;}
+.uploader {
+    position: relative;
+    width: 456px;
+    margin: 15px 0 20px 15px;
+    overflow: hidden;
+}
+.uploader-wrap {
+    width: 460px;
+    min-height: 102px;
+}
+.uploader-wrap.pb {
+    padding-bottom: 100px;
+}
+.uploader-picker,
+.uploader-item {
+    width: 102px;
+    height: 102px;
+    overflow: hidden;
+}
+.uploader-picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: #efefef;
+    border: 1px solid #efefef;
+    font-size: 32px;
+    line-height: 100px;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+}
+.uploader-item {
+    display: table;
+    position: relative;
+    float: left;
+    margin: 0 10px 10px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: move;
+    
+}
+.uploader-item .thumb {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+.uploader-item .photo {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.uploader-item .remove {
+    display: block;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 0 5px;
+    background: #fff;
+    background: rgba(255,255,255,.5);
+    visibility: hidden;
+}
+.uploader-item:hover .remove {
+    visibility: visible;
+}
+.uploader-item .remove:hover {
+    color: red;
+    cursor: pointer;
+}
+.uploader-item .ui-loading {
+    display: none;
+    position: absolute;
+    left: 26px;
+    top: 26px;    
+}
+.uploader-item.loading .ui-loading {
+    display: block;
+}
+.moxie-shim {
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="uploader">
+        <div class="uploader-wrap fn-clear" id="imgContainerID"></div>
+        <span class="uploader-picker iconfont" id="uploader_pircker">&#xe60d;</span>
+    </div>    
+</div>
+<script src="../dist/js/lib.js"></script>
+<script src="../dist/js/plugins/qiniu/plupload/plupload.full.min.js"></script>
+<script src="../dist/js/plugins/qiniu/qiniu.js"></script>
+<script src="../dist/js/plugins/sortable.js"></script>
+<script>
+    (function(exports){
+
+        var Uploader = {
+            wrap: $('#imgContainerID'),
+            picker: $('#uploader_pircker'),
+            itemWidth: 0,
+            itemHeight: 0,
+            count: 0,
+            column: 4,
+            spacing: 10,
+            init: function(){
+                
+                var self = this;
+
+                this.itemWidth = this.picker.outerWidth();
+                this.itemHeight = this.picker.outerHeight();
+
+                // 初始化上传插件
+                var uploader = Qiniu.uploader({
+                    runtimes: 'html5,flash,html4', //上传模式,依次退化
+                    browse_button: 'uploader_pircker', //上传选择的点选按钮，**必需**
+                    uptoken_url: '/Member/GetUptoken', //Ajax请求upToken的Url，**强烈建议设置**（服务端提供）
+                    //uptoken: '', //若未指定uptoken_url,则必须指定 uptoken ,uptoken由其他程序生成
+                    unique_names: true, // 默认 false，key为文件名。若开启该选项，SDK为自动生成上传成功后的key（文件名）。
+                    // save_key: true,   // 默认 false。若在服务端生成uptoken的上传策略中指定了 `sava_key`，则开启，SDK会忽略对key的处理
+                    domain: 'http://7xr1o4.com2.z0.glb.qiniucdn.com/', //bucket 域名，下载资源时用到，**必需**
+                    get_new_uptoken: false, //设置上传文件的时候是否每次都重新获取新的token
+                    container: 'imgContainerID', //上传区域DOM ID，默认是browser_button的父元素，
+                    max_file_size: '100mb', //最大文件体积限制
+                    flash_swf_url: '/Resource/Moxie.swf', //引入flash,相对路径
+                    max_retries: 3, //上传失败最大重试次数
+                    dragdrop: true, //开启可拖曳上传
+                    drop_element: 'imgContainerID', //拖曳上传区域元素的ID，拖曳文件或文件夹后可触发上传
+                    chunk_size: '4mb', //分块上传时，每片的体积
+                    auto_start: true, //选择文件后自动上传，若关闭需要自己绑定事件触发上传
+                    multi_selection: true,
+                    init: {
+                        FilesAdded: function (up, files) {
+                            self.createUploadItem(files);
+                        },
+                        FileUploaded: function (up, file, info) {
+                            // 每个文件上传成功后,处理相关的事情
+                            var fileInfo = {
+                                id: file.id,
+                                url: info.key
+                            };
+
+                            self.updateFileUploadedState(fileInfo);
+
+                            $('html,body').animate({
+                                scrollTop: self.picker.offset().top
+                            }, 800);
+                        },
+                        Error: function (up, err, errTip) {
+                            //上传出错时,处理相关的事情
+                        }
+                    },
+                    filters: {
+                        max_file_size: '1mb',
+                        mime_types: [{
+                            title: "Image files ",
+                            extensions: "jpg,gif,png "
+                        }]
+                    }
+                });
+
+                uploader.bind('init', function(){
+                    $('.moxie-shim').css({
+                        left: 0,
+                        top: 0,
+                        zIndex: 9
+                    });
+                });
+
+                // 初始化拖动排序插件
+                // 拖动排序插件不兼容IE8-,这里做下兼容
+                var isLtIE10 = PPG.utils.isLtIE10;
+                if(!isLtIE10 || isLtIE10 > 8){
+                    var sortable = Sortable.create(this.wrap[0], {
+                        animation: 300,
+                        filter: '.remove',
+                        draggable: '.uploader-item',
+                        onFilter: function(e){
+                            this.removeUploadItem($(e.item));
+                        }.bind(this)
+                    });
+                }else{
+                    this.wrap.on('click', 'span.remove', function(e){
+                        var item = $(e.target).parent();
+                        this.removeUploadItem(item);
+                    }.bind(this));                         
+                }
+            },  
+            setUploadPickerPosition: function(){
+                var left = 0,
+                    top = 0,
+                    count = this.count,
+                    spacing = this.spacing,
+                    _position;
+
+                if(count){
+                    var lastItem = this.wrap.find('.uploader-item:last'),
+                        position = lastItem.position();
+
+                    left = position.left + this.itemWidth + spacing;
+                    top = position.top;
+
+                    if(count%this.column === 0){
+                        left = 0;
+                        top += this.itemWidth + spacing;
+                        this.wrap.addClass('pb');
+                    }else{
+                        this.wrap.removeClass('pb');
+                    }
+                }
+
+                _position = {left: left, top: top};
+
+                this.picker.css(_position);
+                $('.moxie-shim').css(_position);
+            },
+            createUploadItem: function(files){
+                var html = '';
+                var getItemTpl = function(itemId){
+                    return ['<div class="uploader-item loading" id="'+ itemId +'">',
+                            '<div class="thumb"><img class="photo" src=""></div>',
+                            '<span class="remove iconfont">&#xe633;</span>',
+                            '<div class="ui-loading"></div></div>'
+                        ].join('');
+                };
+
+                files.map(function(item){
+                    html += getItemTpl(item.id);
+                });
+
+                this.count += files.length;
+                this.wrap.append(html);
+                this.setUploadPickerPosition();
+            },
+            removeUploadItem: function(item){
+
+                item.fadeOut(200, function(){
+                    item.remove();
+                    this.count -= 1;
+                    this.setUploadPickerPosition();
+                }.bind(this));
+            },
+            updateFileUploadedState: function(fileInfo){
+
+                var $element = $('#' + fileInfo.id),
+                    imageSrc = PPG.IMAGESERVER + fileInfo.url + '-W100H100';
+
+                $element.removeClass('loading');
+                $element.find('.photo').attr('src', imageSrc).show();
+                $element.find('.ui-loading').remove();
+            }
+        };
+
+        exports.Uploader = Uploader;
+
+    })(window);
+
+    $(function(){
+        Uploader.init();
+    });
+</script>
+</body>
+</html>

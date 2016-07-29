@@ -1,0 +1,28 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 找回密码 */
+
+.forget-form {
+	width: 680px;
+	margin: 0 auto;
+
+	.ui-input {
+		width: 220px;
+	}
+	.reset-tiptext {
+		color: $text-color-pale;
+		padding: 0 0 30px 100px;
+
+		strong {
+			font-size: 18px;
+			font-weight: normal;
+			color: $text-color-normal;
+		}
+	}
+	.text-mobile {
+		font-size: 18px;
+		font-weight: normal;
+		color: $text-color-normal;
+	}
+}

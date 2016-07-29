@@ -1,0 +1,352 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+@import "../module/goods";
+
+.index-category,
+.index-brank {
+	float: left;
+	width: 220px;
+}
+
+.index-category {
+
+	background: $bg-color-white;
+
+	.index-category-inner {
+		height: 307px;
+		padding: 9px 0;
+		border: 1px solid $border-color-normal;
+		border-top: none;
+		overflow: hidden;
+	}
+	
+	.index-category-item {
+		position: relative;
+		padding: 2px 0 2px 30px;
+		border-left: 2px solid #fff;
+
+		&.even {
+			background: $bg-color-pale;
+			border-color: $bg-color-pale;
+		}
+
+		.icon {
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			width: 16px;
+			height: 16px;
+			// content: " ";
+			// background-image: url('../images/icon_category.png');
+			// background-repeat: no-repeat;
+			// background-size: auto;
+		}
+
+		&:after {
+			position: absolute;
+			left: -3px;
+			top: 0;
+			bottom: 0;
+			content: "";
+			width: 0;
+			border-left: 1px solid $border-color-normal;
+		}
+
+		&:hover {
+			background: #f5f5f5;
+    		border-left-color: #ddd;
+		}
+
+		.title {
+			height: 22px;
+			line-height: 22px;
+			font-size: $font-size-xn;
+			overflow: hidden;
+			a {
+				color: $text-color-dark;
+			}
+		}
+
+		.items {
+			a {
+				display: inline-block;
+			    max-width: 60px;
+			    height: 16px;
+			    margin-right: 8px;
+			    line-height: 16px;
+			    color: $text-color-pale;
+			    overflow: hidden;
+			}
+		}
+
+		a:hover {
+			color: $text-color-highlight;
+			text-decoration: none;
+		}
+	}
+
+}
+.index-banner {
+	float: right;
+}
+.index-slider {
+	width: 940px;
+	height: 300px;
+	overflow: hidden;
+	.ui-slide-content,
+	.ui-slide-panel {
+		width: 100%;
+		height: 100%;
+	}
+	.ui-slide-panel {
+		> a {
+			display: block;
+			text-align: center;
+			&.lazy{
+				line-height: 300px;
+			}
+		}
+	}
+}
+
+.index-notice {
+	position: relative;
+	height: 24px;
+	padding-left: 32px;
+	line-height: 24px;
+	overflow: hidden;
+	border-top: 1px solid $border-color-normal;
+	border-bottom: 1px solid $border-color-normal;
+	background: #f5f5f5;
+	
+	&:after {
+		position: absolute;
+		left: 10px;
+		top: 5px;
+		width: 16px;
+		height: 16px;
+		background: url(../images/notice.gif) center center no-repeat;
+		content: "";
+		// content: "\e60e";
+		// font-family: "iconfont";
+		// font-size: $font-size-md;
+		// color: $text-color-pale;
+	}
+
+	.index-notice-slider {
+		width: 500px;
+		height: 100%;
+	}
+	a {
+		color: #666;
+	}
+}
+
+.index-brank {
+	.index-gallery-item {
+		display: table;
+		width: 109px;
+		height: 84px;
+
+		a {
+			display: table-cell;
+			width: 100%;
+			height: 100%;
+			vertical-align: middle;
+		}
+	}
+}
+.index-hot-right {
+	width: 940px;
+}
+
+.index-gallery {
+	margin-top: 20px;
+	
+	.index-gallery-hd {
+		padding-bottom: 8px;
+		@extend %clear;
+
+		.title-main {
+			display: inline-block;
+			padding-right: 5px;
+			font-weight: bold;
+		    font-size: $font-size-md;
+			color: $text-color-dark;
+		}
+		.title-small {
+			font-size: $font-size-normal;
+			color: $text-color-pale;
+			text-transform: uppercase;
+		}
+		.menu {
+			padding-top: 5px;
+		}
+		.ui-navmini {
+			display: inline-block;
+			padding: 0 10px 0 0;
+			vertical-align: top;
+		}
+		.ui-more {
+			color: #666;
+		}
+	}
+	.index-gallery-list {
+		@extend %clear;
+	}
+	.index-gallery-item {
+		position: relative;
+		float: left;
+		margin: -1px 0 0 -1px;
+		border: 1px solid $border-color-normal;
+		background: $bg-color-white;
+		overflow: hidden;
+		transition: all .5s;
+	
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			vertical-align: middle;
+			transition: all 1s;
+		}
+
+		&.push {
+			> a:hover {
+				img {
+					opacity: .7;
+					// transform: scale(1.1);
+				}
+			}
+
+		}
+		&.border:hover {
+			// border-color: red;
+			// box-shadow: inset 1px 1px 0 red, inset -1px -1px 0 red;
+			// z-index: 3;
+			// box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		&:hover {
+			border-color: #bbb;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			z-index: 3;
+		}
+		&.h2:hover {
+			border-color: $border-color-normal;
+			box-shadow: none;
+		}
+	}
+}
+
+.index-star,
+.index-recom-week {
+	width: 100%;
+
+	.index-gallery-item {
+		position: relative;
+		width: 187px;
+		height: 270px;
+		overflow: hidden;
+	}
+	.m-goods-thumb {
+		height: 167px;
+		width: 167px;
+		margin: 10px auto 0;
+	}
+	.m-goods-name {
+		height: 38px;
+		a:hover {
+			color: $text-color-highlight;
+		}
+	}
+}
+
+.index-recom-week {
+	.index-gallery-item {
+		&.h2 {
+			width: 230px;
+			height: 541px;
+			border-left: none;
+			border-right: none;
+			overflow: visible;
+
+			a {
+				display: block;
+				width: 229px;
+				height: 271px;
+				margin: -1px 0 0 -1px;
+				border: 1px solid $border-color-normal;
+				overflow: hidden;
+				transition: border .5s, box-shadow .5s;
+				&:first-child {
+					border-bottom: 0;
+				}
+				&:last-child {
+					border-top: 0;
+				}
+				img {
+					height: 100%;
+				}
+
+				&:hover {
+				    position: relative;
+				    z-index: 9;
+				    border-color: #bbb;
+				    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+				}
+			}
+		}
+		&.w2 {
+			width: 375px;
+			img {
+				height: 100%;
+			}
+		}
+	}
+}
+
+.index-star {
+	height: 303px;
+}
+.index-brank {
+	height: 627px;
+}
+.index-recom-week {
+	height: 574px;
+}
+
+.index-footer-banner {
+	background: #28b1fd;
+	.ui-container {
+		position: relative;
+		width: 1170px;
+	    height: 240px;
+	    overflow: hidden;
+	    img {
+	    	position: absolute;
+	    	left: 50%;
+	    	margin-left: -640px;
+	    }
+	}
+}
+.index-banner-full {
+	height: 123px;
+}
+
+// 分类图标的动画效果
+.index-category-item .icon{
+    animation-duration: 1s;
+}
+
+.index-category-item:hover .icon {
+    transform-origin: top center;
+    animation-name: swing;
+}
+
+@keyframes swing {
+    20% {transform: rotate(15deg)}
+    40% {transform: rotate(-10deg)}
+    60% {transform: rotate(5deg)}
+    80% {transform: rotate(-5deg)}
+    100% {transform: rotate(0deg)}
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>仓租费用查询-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/member.css">
+</head>
+
+<body>
+    <div class="ui-page-wrap">
+        <div id="J_global_header" class="m-header ui-fixed">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/logo_m.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">我要销售的商品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-header-nav">
+                        <ul class="m-header-nav-list">
+                            <li class="m-header-nav-item"><a title="首页" href="">首页</a></li>
+                            <li class="m-header-nav-item"><a title="货源" href="">货源</a></li>
+                            <li class="m-header-nav-item"><a title="关于我们" href="">关于我们</a></li>
+                            <li class="m-header-nav-item"><a title="帮助中心" href="">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-header-search">
+                        <form action="" id="J_form_search">
+                            <div class="m-header-search-inner">
+                                <label for="J_search_kw" class="iconfont">&#xe62b;</label>
+                                <input type="text" name="k" value="" placeholder="请输入关键词" class="m-header-search-input" id="J_search_kw">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="member_index.html">用户中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe602;</i>采购管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item ">
+                                                    <a class="link" href="cart.html">我的采购车</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="member_goods_management.html">已采购商品管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item ">
+                                                    <a class="link" href="member_attention.html">我的关注</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe609;</i>订单管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="cart.html" target="_blank">订单新增</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="member_batch_add_order.html">订单批量新增</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="member_my_order.html">我的订单</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">异常订单查询</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61d;</i>我的账户
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">账户信息</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">账户充值</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">账户明细</a>
+                                                </li>
+                                                <li class="member-sidenav-item active ">
+                                                    <a class="link" href="javascript:;">仓租费用查询</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">个人信息管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">我的消息</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">API配置</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <h3 class="member-head-title">仓租费用查询</h3>
+                                </div>
+                                <div class="warehouse-fee member-main-inner ui-content-padding">
+                                    <form action="" id="J_form_query" class="member-form-col3 ui-form">
+                                        <div class="member-form-query">
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="product_code">商品编号：</label>
+                                                <input class="ui-input" type="text" id="product_code">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="product_name">采购单号：</label>
+                                                <input class="ui-input" type="text" id="product_name">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">仓库：</label>
+                                                <select name="" id="product_type" class="ui-select">
+                                                    <option value="">请选择</option>
+                                                    <option value="SH01">保税区CY001</option>
+                                                    <option value="ZXM12">HTC_宁波区ZXM12</option>
+                                                    <option value="CXD02">香港火炭区</option>
+                                                    <option value="NB_ZXM08">HTC_宁波保税区ZXM08</option>
+                                                    <option value="CXD04">保税区CXD04</option>
+                                                    <option value="ST011">上海自贸区ST011</option>
+                                                    <option value="CY001">新西兰直邮ST020</option>
+                                                    <option value="STKJ">东莞5A保税区</option>
+                                                    <option value="CXD09">杭州保税区CXD09</option>
+                                                    <option value="CY003">保税区CY003</option>
+                                                    <option value="GT01">深圳GT01</option>
+                                                    <option value="UD033">杭州保税区UD033</option>
+                                                    <option value="HTC-1">Amazon美国亚马逊</option>
+                                                    <option value="BH08">韩国直邮BH08</option>
+                                                    <option value="ZXM07">韩国直邮ZXM07</option>
+                                                    <option value="YQ003">广州保税区YQ003</option>
+                                                    <option value="ZY">广州空港保税区BH02</option>
+                                                    <option value="ZZ">卓志</option>
+                                                    <option value="HWT">广州保税区ZXM01</option>
+                                                </select>
+                                                <p class="ui-form-explain"></p>
+                                            </div>
+                                            <div class="ui-form-item auto time">
+                                                <label class="ui-label">计费时间：</label>
+                                                <span class="ui-input-calendar"><input type="text" id="J_date_start" class="ui-input" value="" readonly="readonly" placeholder="开始时间"></span>&nbsp;-
+                                                <span class="ui-input-calendar"><input type="text" id="J_date_end" class="ui-input" value="" readonly="readonly" placeholder="结束时间"></span>
+                                            </div>
+                                            <p class="member-form-query-btns">
+                                                <button id="J_submit_query" class="submit ui-button-lgreen ui-button">查询</button>
+                                            </p>
+                                        </div>
+                                        <div class=" member-tabs ui-tabs">
+                                            <div class="member-tabs-bd ui-tabs-content">
+                                                <div class="member-table ui-table-inbox ui-tabs-panel">
+                                                    <table class="ui-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th width="10%">采购单号</th>
+                                                                <th width="10%">商品编号</th>
+                                                                <th width="15%">仓库</th>
+                                                                <th width="10%">采购件数</th>
+                                                                <th width="10%">体积(M³)</th>
+                                                                <th width="10%">重量(KG)</th>
+                                                                <th width="10%">仓租(RMB)</th>
+                                                                <th width="10%">采购时间</th>
+                                                                <th width="15%"> 计费时间</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="member-table-item" data-pid="99">
+                                                                <td>00000001</td>
+                                                                <td>1001</td>
+                                                                <td>广州</td>
+                                                                <td>1000</td>
+                                                                <td>56</td>
+                                                                <td>526</td>
+                                                                <td>19905.00</td>
+                                                                <td>2016-12-13</td>
+                                                                <td>2016-12-13</td>
+                                                            </tr>
+                                                            <tr class="member-table-item" data-pid="99">
+                                                                <td>00000001</td>
+                                                                <td>1001</td>
+                                                                <td>广州</td>
+                                                                <td>1000</td>
+                                                                <td>56</td>
+                                                                <td>564</td>
+                                                                <td>19905.00</td>
+                                                                <td>2016-12-13</td>
+                                                                <td>2016-12-13</td>
+                                                            </tr>
+                                                            <tr class="member-table-item" data-pid="99">
+                                                                <td>00000001</td>
+                                                                <td>1001</td>
+                                                                <td>广州</td>
+                                                                <td>1000</td>
+                                                                <td>56</td>
+                                                                <td>156</td>
+                                                                <td>19905.00</td>
+                                                                <td>2016-12-13</td>
+                                                                <td>2016-12-13</td>
+                                                            </tr>
+                                                            <!--<tr><td colspan="8" class="member-table-none">无相关信息</td></tr>-->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ui-paging member-paging" data-current="1" data-total="24">
+                                            <a href="#" class="ui-paging-prev">
+                                                <i class="iconfont" title="左箭头"></i> 上一页
+                                            </a>
+                                            <a href="#" class="ui-paging-item">1</a>
+                                            <a href="#" class="ui-paging-item ui-paging-current">2</a>
+                                            <a href="#" class="ui-paging-item">3</a>
+                                            <a href="#" class="ui-paging-item">4</a>
+                                            <a href="#" class="ui-paging-item">5</a>
+                                            <a href="#" class="ui-paging-item">6</a>
+                                            <a href="#" class="ui-paging-item">7</a>
+                                            <span class="ui-paging-ellipsis">...</span>
+                                            <a href="#" class="ui-paging-item">24</a>
+                                            <a href="#" class="ui-paging-next">
+                                                下一页 <i class="iconfont" title="右箭头"></i>
+                                            </a>
+                                            <span class="ui-paging-info"><span class="ui-paging-bold">5/7</span>页</span>
+                                            <span class="ui-paging-which"><input name="some_name" value="6" type="text"></span>
+                                            <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                        </div>
+                                        <input type="hidden" name="" id="J_query_type">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-footer">
+            <div class="m-footer-inner ui-container">
+                <p class="conc unline">
+                    <span class="tel ui-right"><i class="iconfont">&#xe628;</i>400-888-4547</span>
+                    <a class="mailto" href="mailto:seller@papago.hk"><i class="iconfont">&#xe606;</i>E-mail：seller@papago.hk</a>
+                </p>
+                <div class="desc unline fn-clear">
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>新手上路</dt>
+                            <dd><a href="">新会员注册</a></dd>
+                            <dd><a href="">选品刊登</a></dd>
+                            <dd><a href="">下单支付</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>费用介绍</dt>
+                            <dd><a href="">产品资料包</a></dd>
+                            <dd><a href="">订单操作费</a></dd>
+                            <dd><a href="">预定费及仓储费</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>物流配送</dt>
+                            <dd><a href="">关税说明</a></dd>
+                            <dd><a href="">验货签收</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>售后保障</dt>
+                            <dd><a href="">退换货服务</a></dd>
+                            <dd><a href="">售后赔付政策</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="menu unline">
+                    <ul class="menu-list">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">用户协议</a></li>
+                        <li><a href="">友情链接</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/member.js"></script>
+    <script src="../dist/js/market.js">
+    </script>
+    <script>
+    $(function() {
+        window.market && market.warehouseFee();
+    });
+    </script>
+</body>
+
+</html>

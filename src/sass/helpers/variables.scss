@@ -1,0 +1,79 @@
+// text color
+$text-color-normal: #666 !default;
+$text-color-dark: #333 !default;
+$text-color-pale: #999 !default;
+$text-color-highlight: #ff7800 !default;
+$text-color-link: #06aaff !default;
+$text-color-warning: #f06129 !default;
+$text-color-success: #a7d94f !default;
+$text-color-error: #ff5243 !default;
+
+// font size
+$font-size-normal: 12px !default;
+$font-size-xn: 14px !default;
+$font-size-md: 16px !default;
+$font-size-lg: 18px !default;
+$font-size-xl: 22px !default;
+
+// border
+$border-color-normal: #ddd !default;
+$border-color-dark: #969696 !default;
+$border-color-pale: #eee !default;
+
+$border-radius-base: 2px !default;
+$border-radius-large: 6px !default;
+$border-radius-small: 3px !default;
+
+// background-color
+$bg-color-white: #fff !default;
+$bg-color-pale: #f5f5f5 !default;
+
+// btn
+$btn-padding-lg: 0 15px !default;
+$btn-padding-md: 0 10px !default;
+$btn-padding-sm: 0 3px !default;
+
+$btn-default-color: #666 !default;
+$btn-default-bg: #ff7800 !default;
+$btn-default-border: #ff7800 !default;
+
+$btn-primary-color: #ff7800 !default;
+$btn-primary-bg: #fff !default;
+$btn-primary-border: #ff7800 !default;
+
+$btn-success-color: #fff !default;
+$btn-success-bg: #a7d94f !default;
+$btn-success-border: #a7d94f !default;
+
+$btn-disabled-color: #fff !default;
+$btn-disabled-bg: #b3b3b3 !default;
+$btn-disabled-border: #b3b3b3 !default;
+
+// padding 
+$padding-base-vertical: 5px !default;
+$padding-base-horizontal: 10px !default;
+
+$padding-large-vertical: 10px !default;
+$padding-large-horizontal: 15px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+// space
+$space-xxl: 50px !default;
+$space-xl: 40px !default;
+$space-lg: 30px !default;
+$space-md: 20px !default;
+$space-sm: 10px !default;
+$space-xs: 5px !default;
+
+
+// line-height
+$line-height-default: 1.5 !default;
+$line-height-lg: 2 !default;
+
+// image path
+$image-path: '../src/images/';

@@ -1,0 +1,192 @@
+/* alice.button-dropdown下拉按钮 */
+.ui-dbutton {
+    padding: 0;
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.ui-dbutton-self,
+.ui-dbutton-arrow {
+    float: left;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.ui-dbutton-self {
+    border-radius: 2px 0 0 2px;
+}
+
+.ui-dbutton-arrow {
+    border-radius: 0 2px 2px 0;
+}
+
+
+/* 橙色 */
+
+.ui-dbutton-orange {
+    &:hover {
+        color: #fff;
+        background-color: #f57403;
+    }
+    .ui-dbutton-self:hover,
+    .ui-dbutton-arrow:hover {
+        background-color: #fb8318;
+    }
+    .ui-dbutton-self {
+        border-right: 1px solid #e8720b;
+    }
+    .ui-dbutton-arrow {
+        border-left: 1px solid #fd8a27;
+        color: #fff;
+    }
+}
+
+
+/* 大橙色按钮 */
+
+.ui-button-lorange {
+    .ui-dbutton-self {
+        padding: 0 12px;
+    }
+    .ui-dbutton-arrow {
+        width: 24px;
+    }
+}
+
+
+/* 中橙色按钮 */
+
+.ui-button-morange {
+    .ui-dbutton-self {
+        padding: 0 10px;
+    }
+    .ui-dbutton-arrow {
+        width: 20px;
+    }
+}
+
+
+/* 小橙色按钮 */
+
+.ui-button-sorange {
+    .ui-dbutton-self {
+        padding: 0 8px;
+    }
+    .ui-dbutton-arrow {
+        width: 18px;
+        font-size: 10px;
+    }
+}
+
+
+/* 白色 */
+
+.ui-dbutton-white {
+    &:hover {
+        background-color: #f3f3f3;
+    }
+    .ui-dbutton-self:hover,
+    .ui-dbutton-arrow:hover {
+        background-color: #fcfbfb;
+        color: #666;
+    }
+    .ui-dbutton-self {
+        border-right: 1px solid #cdcdcd;
+    }
+    .ui-dbutton-arrow {
+        border-left: 1px solid #fff;
+        color: #999;
+    }
+}
+
+
+/* 大白色按钮 */
+
+.ui-button-lwhite {
+    .ui-dbutton-self {
+        padding: 0 12px;
+    }
+    .ui-dbutton-arrow {
+        width: 24px;
+    }
+}
+
+
+/* 中白色按钮 */
+
+.ui-button-mwhite {
+    .ui-dbutton-self {
+        padding: 0 10px;
+    }
+    .ui-dbutton-arrow {
+        width: 20px;
+    }
+}
+
+
+/* 小白色按钮 */
+
+.ui-button-swhite {
+    .ui-dbutton-self {
+        padding: 0 8px;
+    }
+    .ui-dbutton-arrow {
+        width: 18px;
+        font-size: 10px;
+    }
+}
+
+.ui-button-dropdown {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.ui-button-dropdown-large,
+.ui-button-dropdown-middle,
+.ui-button-dropdown-small {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 0 0 4px #d9d9d9;
+    zoom: 1;
+    position: absolute;
+    left: 0;
+    width: 98%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ui-button-dropdown-large {
+    top: 33px;
+    font-size: 14px;
+}
+
+.ui-button-dropdown-middle {
+    top: 29px;
+    font-size: 14px;
+}
+
+.ui-button-dropdown-small {
+    top: 25px;
+    font-size: 12px;
+}
+
+.ui-button-dropdown-item {
+    zoom: 1;
+    border-bottom: 1px solid #E6E6E6;
+    a {
+        padding: 5px 10px;
+        display: block;
+        zoom: 1;
+        color: #08c;
+        &:hover {
+            background-color: #DFE9F2;
+            text-decoration: none;
+        }
+    }
+}

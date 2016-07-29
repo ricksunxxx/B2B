@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>下单支付-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/help.css">
+</head>
+
+<body>
+    <div class="ui-page-wrap">
+        <div id="J_global_header" class="m-header ui-fixed">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/logo_m.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">我要销售的商品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-header-nav">
+                        <ul class="m-header-nav-list">
+                            <li class="m-header-nav-item"><a title="首页" href="">首页</a></li>
+                            <li class="m-header-nav-item"><a title="货源" href="">货源</a></li>
+                            <li class="m-header-nav-item"><a title="关于我们" href="">关于我们</a></li>
+                            <li class="m-header-nav-item"><a title="帮助中心" href="">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-header-search">
+                        <form action="" id="J_form_search">
+                            <div class="m-header-search-inner">
+                                <label for="J_search_kw" class="iconfont">&#xe62b;</label>
+                                <input type="text" name="k" value="" placeholder="请输入关键词" class="m-header-search-input" id="J_search_kw">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="">帮助中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe605;</i>
+                                                <a href="">新手帮助</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">下单支付</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">选品刊登</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">注册及登陆</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">关于啪啪购</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe609;</i>
+                                                <a href="">物流配送</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">验货签收</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">关税说明</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61e;</i>
+                                                 <a href="">费用介绍</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">预订费及仓储费</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">订单操作费</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">充值及提现</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">产品资料包</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe635;</i>
+                                                 <a href="">售后服务</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">退换货政策</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">售后赔付政策</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe624;</i>
+                                                 <a href="">常见问题</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">注册篇</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">预定篇</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">投诉篇</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">订单篇</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">产品篇</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe60e;</i>
+                                                 <a href="">公告</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe60f;</i>
+                                                 <a href="">联系我们</a> 
+                                                <span class="title-icon" data-role="trigger"></span>
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">联系我们</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <div class="help-bread-nav">
+                                        <ul class="help-bread-list">
+                                            <li class="help-bread-list-item"><a href="">帮助中心</a></li>
+                                            <li class="help-bread-list-item"><a href="">新手帮助</a></li>
+                                            <li class="help-bread-list-item"><a href="">下单支付</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="member-main-inner">
+                                    <div class="help-container">
+                                        <div class="ui-box help-ui-box">
+                                            <div class="ui-box-head help-ui-box-head">
+                                                <h3 class="head-title">下单支付</h3>
+                                                <p>
+                                                    <span class="head-text">创建时间：2015年02月11日</span>
+                                                    <span class="head-text">浏览次数：【6676】</span>
+                                                </p>
+                                            </div>
+                                            <div class="ui-box-container">
+                                                <div class="ui-box-content help-order-pay">
+                                                    <div class="help-setion">
+                                                        <p class="step-title">一、已成功销售产品，到啪啪购直接下单</p>
+                                                        <p class="step">1.打开啪啪购 <a href="http://www.papago.hk/" target="_blank"> www.papago.hk </a> 并登陆账号</p>
+                                                        <p class="step">2.找到需要采购的商品，输入需要采购的数量，点击我要采购</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-152220-292.JPG" />
+                                                        </p>
+                                                        <p class="step">3.挑选完毕，点击去购物车</p>
+                                                        <p class="except-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-152235-619.JPG" />
+                                                        </p>
+                                                        <p class="step">4.到达购物车，选中要下单商品，点击直接下单</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-152303-570.JPG" />
+                                                        </p>
+                                                        <p class="step">5.选择物流渠道、填写收件人信息，点击确认</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-153804-336.JPG" />
+                                                        </p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-153824-075.JPG" />
+                                                        </p>
+                                                        <p class="step">6.确认订单信息无误后，点击确认支付</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-154100-104.JPG" />
+                                                        </p>
+                                                        <p class="step">7.支付订单：如您的账户有余额，直接余额支付，如果没有余额请点击立即充值并支付</p>
+                                                        <p class="except-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-154224-184.JPG" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="help-setion">
+                                                        <p class="step-title">二、未产生订单，先预购</p>
+                                                        <p class="step">1.挑选产品，点击我要采购</p>
+                                                        <p class="step">2.进入购物车，点击采购结算</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-155323-111.png" />
+                                                        </p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-155653-940.png" />
+                                                        </p>
+                                                        <p class="step">3.预购的商品可在已采购商品管理处查看，如有订单可直接下单，无需再支付产品费</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-155941-169.png" />
+                                                        </p>
+                                                    </div>
+                                                    <div class="help-setion">
+                                                        <p class="step-title">三、订单批量新增</p>
+                                                        <p class="step">1.进入个人中心，点击订单批量新增，先下载订单上传模板</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-161014-996.png" />
+                                                        </p>
+                                                        <p class="step">2.按照下载的模板表格填写好相关信息后保存，点击选择文件，上传好后点击确认</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-161041-873.png" />
+                                                        </p>
+                                                        <p class="step">3.批量上传好订单后，进入我的订单，未付款订单进行支付即可</p>
+                                                        <p class="step-img">
+                                                            <img alt="" src="http://www.papago.hk/ckupload/images/20150211-161102-634.png" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-footer">
+            <div class="m-footer-inner ui-container">
+                <p class="conc unline">
+                    <span class="tel ui-right"><i class="iconfont">&#xe628;</i>400-888-4547</span>
+                    <a class="mailto" href="mailto:seller@papago.hk"><i class="iconfont">&#xe606;</i>E-mail：seller@papago.hk</a>
+                </p>
+                <div class="desc unline fn-clear">
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>新手上路</dt>
+                            <dd><a href="">新会员注册</a></dd>
+                            <dd><a href="">选品刊登</a></dd>
+                            <dd><a href="">下单支付</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>费用介绍</dt>
+                            <dd><a href="">产品资料包</a></dd>
+                            <dd><a href="">订单操作费</a></dd>
+                            <dd><a href="">预定费及仓储费</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>物流配送</dt>
+                            <dd><a href="">关税说明</a></dd>
+                            <dd><a href="">验货签收</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col">
+                        <dl class="desc-dl">
+                            <dt>售后保障</dt>
+                            <dd><a href="">退换货服务</a></dd>
+                            <dd><a href="">售后赔付政策</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="menu unline">
+                    <ul class="menu-list">
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">用户协议</a></li>
+                        <li><a href="">友情链接</a></li>
+                    </ul>
+                </div>
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/help.js"></script>
+</body>
+
+</html>

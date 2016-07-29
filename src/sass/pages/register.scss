@@ -1,0 +1,227 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 注册 */
+.register-upload {
+	padding-bottom: 5px;
+
+	&.ui-inlineblock {
+		vertical-align: top;
+	}
+}
+.register-form {
+	padding-bottom: 50px;
+
+	.ui-input {
+		// width: 280px;
+		width: 302px;
+	}
+	
+	.ui-button.submit {
+		width: 300px;
+	}
+
+	.ui-radio,
+	.ui-checkbox {
+		margin: 8px 3px 0 0;
+	}
+
+	.label {
+		display: inline-block;
+		margin-top: 4px;
+		margin-right: 20px;
+		font-size: $font-size-xn;
+		vertical-align: top;
+	}
+
+	.label.other {
+		margin-right: 0;
+	}
+
+	.label.other ~ .ui-input {
+		width: 180px;
+		border: 0;
+		border-bottom: 1px solid $border-color-normal;
+	}
+
+	.moxie-shim {
+		z-index: 9;
+	}
+}
+
+.register-form-row {
+	padding-bottom: 40px;
+
+	.title {
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		font-size: 18px;
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+.register-form-sub-row {
+	padding-left: 100px;
+
+	.sub-title {
+		font-size: $font-size-xn;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px dashed $border-color-normal;
+	}
+}
+
+.register-step1 {
+	.btn-upload {
+		margin-top: 3px;
+	}
+
+	.btn-upload ~ .ui-form-explain {
+		vertical-align: middle;
+	}
+
+	.card-thumb {
+		.left,
+		.right {
+			float: left;
+			width: 320px;
+			margin-right: 10px;
+			text-align: center;
+		}
+
+	}
+	
+	.ui-upload-thumb {
+		width: 320px;
+		height: 240px;
+		line-height: 237px; // 动态插入时垂直居中用
+
+		.picker {
+			.picker-inner {
+				width: 120px;
+				height: 32px;
+				margin: 100px auto 0;
+			}
+
+			.pick {
+				line-height: 32px;
+				font-size: $font-size-md;
+
+				.iconfont {
+					font-size: 22px;
+				}
+			}
+
+			&:hover,
+			&.hover {
+				.picker-inner-bd {
+					margin-top: -32px;
+				}
+			}
+		}
+	}
+
+	.ui-textarea {
+		min-width: 400px;
+		max-width: 400px;
+		min-height: 100px;
+		max-height: 100px;
+		vertical-align: middle;
+	}
+}
+.register-step2 {
+	.ui-form-item {
+		padding-left: 200px;
+	}	
+	.ui-label {
+		width: 248px;
+	}
+	.ui-input {
+		width: 200px;
+	}
+
+	strong.mobile {
+		display: inline-block;
+		padding-right: 36px;
+		margin-top: -4px;
+		font-size: 24px;
+		line-height: 38px;
+		color: $text-color-normal;
+		font-weight: normal;
+	}
+	.btn-change {
+		color: $text-color-normal;
+
+		&:hover {
+			color: $text-color-link;
+		}
+	}
+
+	.register-step2-body {
+		width: 776px;
+		margin: 80px auto 30px;
+	}
+
+	.ui-form-explain {
+		text-align: center;
+	}
+
+	.ui-button.submit {
+		width: 180px;
+		margin-left: 68px;
+	}
+
+	.ui-button.ui-button-ldisable {
+		background: $border-color-normal;
+	}
+	.ui-button.reget {
+		font-weight: normal;
+	}
+}
+
+.register-result {
+	padding-bottom: 150px;
+
+	.text {
+		text-align: center;
+		line-height: 1.8;
+		color: $text-color-normal;
+
+		.iconfont.done {
+			font-size: 120px;
+			color: $text-color-success;
+		}
+
+		&.text-strong {
+			padding-bottom: 20px;
+			font-size: $font-size-md;
+			font-weight: bold;
+			color: $text-color-dark;
+		}
+	}
+}
+
+/* 供货商注册 */
+.register-statement-inner {
+	position: relative;
+	padding: 30px 30px 30px 80px;
+	margin-bottom: 40px;
+	border: 1px solid #b2e2ea;
+    background: #e5f2f8;
+	
+	.iconfont {
+		position: absolute;
+		left: 30px;
+		top: 22px;
+		color: #68b5e2;
+		font-size: 36px;
+	}
+
+	dt {
+		font-size: 18px;
+	}
+
+	dd {
+		line-height: 1.8;
+	}
+}

@@ -1,0 +1,76 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 主底部 */
+.m-footer {
+	width: 100%;
+    background-color: #28b1fd;
+    color: #fff;
+	a {
+		color: #fff;
+
+		&:hover {
+			color: #00d8ff;
+		}
+	}
+
+	.conc,
+	.menu,
+	.copyright {
+		height: 40px;
+		line-height: 40px;
+	}
+
+	.desc {
+		padding: 20px 0;
+
+		.col {
+			float: left;
+			width: 25%;
+			min-height: 100px;
+		}
+	}
+
+	.tel {
+		.iconfont {
+			font-size: 13px;
+		}
+	}
+
+	.desc-dl {
+		width: 104px;
+		margin: 0 auto;
+
+		dt {
+			font-size: 16px;
+		}
+	}
+
+	.menu {
+		text-align: center;
+	}
+
+	.menu-list li {
+		display: inline-block;
+		width: 140px;
+	}
+
+	.copyright {
+		text-align: center;
+	}
+
+    .unline {
+    	border-bottom: 1px solid #23a0e2;
+    }
+}
+
+.s-m-footer {
+	min-height: 60px;
+	background: #2b292a;
+	color: #fff;
+
+	.copyright {
+		line-height: 60px;
+		text-align: center;
+	}
+}

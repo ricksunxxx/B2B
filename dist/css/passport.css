@@ -1,0 +1,659 @@
+@charset "UTF-8";
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+/* alice.step 样式模块 */
+.ui-step {
+  padding: 0 40px;
+  margin: 0 auto;
+  font-size: 14px;
+  list-style: none;
+  zoom: 1;
+  position: relative;
+  color: #b7b7b7;
+  overflow: hidden; }
+  .ui-step:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden; }
+  .ui-step li {
+    float: left;
+    height: 54px;
+    margin: 0;
+    width: 50%;
+    position: relative; }
+    .ui-step li .ui-step-icon {
+      height: 50px;
+      position: absolute;
+      top: 0;
+      width: 150px;
+      text-align: center;
+      left: -25px;
+      font-family: tahoma; }
+
+.ui-step-icon .iconfont {
+  font-size: 30px;
+  margin: 0;
+  color: #b7b7b7;
+  color: rgba(0, 0, 0, 0.25);
+  *color: #b7b7b7;
+  line-height: 30px;
+  background: #fff;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 1px 1px 2px #fff, 0 0 0 #ccc, 1px 1px 2px #fff; }
+
+.ui-step-icon .ui-step-number {
+  line-height: 17px;
+  font-style: normal;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  padding: 0 20px;
+  font-weight: bold;
+  color: #fff; }
+
+.ui-step .ui-step-active i.ui-step-number {
+  color: #FFF; }
+
+.ui-step-end .ui-step-number {
+  background: transparent;
+  font-size: 16px;
+  font-style: normal;
+  left: 17px;
+  line-height: 13px;
+  padding: 0;
+  text-shadow: none;
+  top: 9px; }
+
+.ui-step-icon .ui-step-text {
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  text-shadow: 0 1px 0 white;
+  top: 34px;
+  left: -48px; }
+
+.ui-step li .ui-step-line {
+  height: 3px;
+  background: #b9b9b9;
+  display: block;
+  margin-top: 14px;
+  line-height: 1;
+  overflow: hidden; }
+
+.ui-step li.ui-step-end {
+  position: absolute;
+  top: 0;
+  right: -110px;
+  width: 150px;
+  zoom: 1;
+  _clear: both;
+  /* 修复ie6下最后一步莫名其妙显示不出来的问题 */ }
+  .ui-step li.ui-step-end .ui-step-line {
+    display: none; }
+
+/* 步骤长度 */
+.ui-step-2 li {
+  width: 100%; }
+
+.ui-step-3 li {
+  width: 50%; }
+
+.ui-step-4 li {
+  width: 33%; }
+
+.ui-step-5 li {
+  width: 25%; }
+
+/* 修改颜色 */
+.ui-step .ui-step-active {
+  color: #f16f20; }
+  .ui-step .ui-step-active .iconfont {
+    color: #ff7001; }
+
+.ui-step .ui-step-done .iconfont {
+  color: #ff9a00; }
+
+.ui-step .ui-step-done .ui-step-line {
+  background: #fc9c27; }
+
+.ui-step-blue .ui-step-active {
+  color: #3b7cb8; }
+  .ui-step-blue .ui-step-active .iconfont {
+    color: #1e6bb3; }
+
+.ui-step-blue .ui-step-done .iconfont {
+  color: #428fd6; }
+
+.ui-step-blue .ui-step-done .ui-step-line {
+  background: #418cd6; }
+
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+.ui-upload-thumb {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border: 1px solid #ddd;
+  overflow: hidden; }
+  .ui-upload-thumb .picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .5s; }
+    .ui-upload-thumb .picker .picker-inner {
+      width: 100%;
+      height: 22px;
+      margin: 32px auto 0;
+      overflow: hidden; }
+    .ui-upload-thumb .picker .picker-inner-bd {
+      text-align: center;
+      background: #fff;
+      transition: all .5s; }
+    .ui-upload-thumb .picker .pick {
+      display: block;
+      line-height: 22px;
+      font-size: 12px;
+      color: #666; }
+      .ui-upload-thumb .picker .pick .iconfont {
+        padding-right: 0;
+        font-size: 16px; }
+    .ui-upload-thumb .picker:hover .picker-inner-bd, .ui-upload-thumb .picker.hover .picker-inner-bd {
+      margin-top: -22px; }
+  .ui-upload-thumb.uploading .ui-loading {
+    display: block; }
+  .ui-upload-thumb.uploaded {
+    line-height: 87px; }
+    .ui-upload-thumb.uploaded .picker-inner {
+      display: none; }
+    .ui-upload-thumb.uploaded .picker {
+      opacity: 0;
+      filter: alpha(opacity=0); }
+    .ui-upload-thumb.uploaded:hover .picker {
+      opacity: 1;
+      filter: alpha(opacity=1); }
+  .ui-upload-thumb .ui-loading {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-position: 50%; }
+
+/* alice.tipbox 样式模块 */
+.ui-tipbox {
+  position: relative;
+  zoom: 1;
+  font-size: 12px;
+  line-height: 22px; }
+  .ui-tipbox .ui-tipbox-icon {
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 22px;
+    left: 48px; }
+
+.ui-tipbox-icon .iconfont {
+  font-size: 36px;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 32px;
+  height: 32px;
+  line-height: 36px;
+  text-shadow: 0 1px 0 #fff; }
+
+.ui-tipbox-message {
+  border: 1px solid #b2e2ea;
+  background: #e5f2f8; }
+  .ui-tipbox-message .ui-tipbox-icon .iconfont {
+    color: #68b5e2; }
+
+.ui-tipbox-success {
+  border: 1px solid #E1E1CA;
+  background: #edfed0; }
+  .ui-tipbox-success .ui-tipbox-icon .iconfont {
+    color: #b5de70; }
+
+.ui-tipbox-error {
+  background: #FDEEE9;
+  border: 1px solid #fadcd3; }
+  .ui-tipbox-error .ui-tipbox-icon .iconfont {
+    color: #f17975; }
+
+.ui-tipbox-warning {
+  background: #fefea4;
+  border: 1px solid #e6e098; }
+  .ui-tipbox-warning .ui-tipbox-icon .iconfont {
+    color: #ff9966; }
+
+.ui-tipbox-question {
+  border: 1px solid #b2e2ea;
+  background: #e0f4ff; }
+  .ui-tipbox-question .ui-tipbox-icon .iconfont {
+    color: #66cae2; }
+
+.ui-tipbox-stop {
+  background: #FDEEE9;
+  border: 1px solid #fadcd3; }
+  .ui-tipbox-stop .ui-tipbox-icon .iconfont {
+    color: #f17975; }
+
+.ui-tipbox-wait {
+  border: 1px solid #fae3cc;
+  background: #FFF9D9; }
+  .ui-tipbox-wait .ui-tipbox-icon .iconfont {
+    color: #d1a066; }
+
+.ui-tipbox-content {
+  margin: 14px 0 14px 87px; }
+  .ui-tipbox-content .ui-tipbox-title {
+    margin: 0;
+    padding: 0; }
+  .ui-tipbox-content h3.ui-tipbox-title {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold; }
+
+.ui-tipbox-content-simple {
+  margin: 22px 0 22px 88px; }
+  .ui-tipbox-content-simple h3.ui-tipbox-title {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold; }
+
+.ui-tipbox-explain {
+  margin: 0;
+  padding: 0;
+  color: #808080; }
+
+.ui-tipbox-white {
+  background: #fff;
+  border: 1px solid transparent;
+  _border-color: tomato;
+  /* fix ie6 dont support border transparent */
+  _-webkit-filter: chroma(color=tomato);
+  _        filter: chroma(color=tomato); }
+
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+.ui-form-explain.failed {
+  color: #ff5243; }
+
+/* 登录 */
+.login-main {
+  padding: 100px 0; }
+
+.login-left {
+  float: left;
+  width: 584px;
+  height: 472px;
+  overflow: hidden; }
+
+.login-right {
+  float: right;
+  width: 420px;
+  padding-top: 20px; }
+
+.login-form {
+  padding: 30px 40px 20px;
+  border: 5px solid #EDEDED; }
+  .login-form fieldset {
+    text-align: center;
+    font-size: 22px; }
+  .login-form .ui-form-item {
+    position: relative;
+    padding: 0 0 20px 0; }
+  .login-form .ui-input {
+    width: 268px;
+    padding-left: 50px; }
+  .login-form .ui-button {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: normal; }
+  .login-form .failed-tip {
+    height: 20px;
+    padding-top: 0;
+    padding-bottom: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #f00;
+    text-align: center; }
+  .login-form .i-label,
+  .login-form .ui-form-item:hover .i-label {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 0;
+    border-right: 1px solid #c1c1c1;
+    font-size: 16px;
+    color: #999;
+    background: #f5f5f5;
+    text-align: center; }
+  .login-form .ui-form-item-error .i-label {
+    background: #ffeaeb;
+    color: #f29c9f;
+    border-color: #f00; }
+  .login-form .ui-form-explain {
+    display: none; }
+  .login-form .join-text {
+    height: 16px;
+    margin-bottom: 10px;
+    line-height: 2.5;
+    border-bottom: 1px dashed #ddd;
+    color: #999;
+    text-align: center; }
+    .login-form .join-text span {
+      display: inline-block;
+      background: #fff;
+      padding: 0 20px; }
+
+.login-form-inner {
+  width: 100%; }
+
+.login-input-wrap {
+  position: relative;
+  height: 42px; }
+
+.login-forget {
+  margin-top: -10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .login-forget a {
+    color: #666; }
+
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+/* 注册 */
+.register-upload {
+  padding-bottom: 5px; }
+  .register-upload.ui-inlineblock {
+    vertical-align: top; }
+
+.register-form {
+  padding-bottom: 50px; }
+  .register-form .ui-input {
+    width: 302px; }
+  .register-form .ui-button.submit {
+    width: 300px; }
+  .register-form .ui-radio,
+  .register-form .ui-checkbox {
+    margin: 8px 3px 0 0; }
+  .register-form .label {
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 20px;
+    font-size: 14px;
+    vertical-align: top; }
+  .register-form .label.other {
+    margin-right: 0; }
+  .register-form .label.other ~ .ui-input {
+    width: 180px;
+    border: 0;
+    border-bottom: 1px solid #ddd; }
+  .register-form .moxie-shim {
+    z-index: 9; }
+
+.register-form-row {
+  padding-bottom: 40px; }
+  .register-form-row .title {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc; }
+
+.register-form-sub-row {
+  padding-left: 100px; }
+  .register-form-sub-row .sub-title {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ddd; }
+
+.register-step1 .btn-upload {
+  margin-top: 3px; }
+
+.register-step1 .btn-upload ~ .ui-form-explain {
+  vertical-align: middle; }
+
+.register-step1 .card-thumb .left,
+.register-step1 .card-thumb .right {
+  float: left;
+  width: 320px;
+  margin-right: 10px;
+  text-align: center; }
+
+.register-step1 .ui-upload-thumb {
+  width: 320px;
+  height: 240px;
+  line-height: 237px; }
+  .register-step1 .ui-upload-thumb .picker .picker-inner {
+    width: 120px;
+    height: 32px;
+    margin: 100px auto 0; }
+  .register-step1 .ui-upload-thumb .picker .pick {
+    line-height: 32px;
+    font-size: 16px; }
+    .register-step1 .ui-upload-thumb .picker .pick .iconfont {
+      font-size: 22px; }
+  .register-step1 .ui-upload-thumb .picker:hover .picker-inner-bd, .register-step1 .ui-upload-thumb .picker.hover .picker-inner-bd {
+    margin-top: -32px; }
+
+.register-step1 .ui-textarea {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 100px;
+  vertical-align: middle; }
+
+.register-step2 .ui-form-item {
+  padding-left: 200px; }
+
+.register-step2 .ui-label {
+  width: 248px; }
+
+.register-step2 .ui-input {
+  width: 200px; }
+
+.register-step2 strong.mobile {
+  display: inline-block;
+  padding-right: 36px;
+  margin-top: -4px;
+  font-size: 24px;
+  line-height: 38px;
+  color: #666;
+  font-weight: normal; }
+
+.register-step2 .btn-change {
+  color: #666; }
+  .register-step2 .btn-change:hover {
+    color: #06aaff; }
+
+.register-step2 .register-step2-body {
+  width: 776px;
+  margin: 80px auto 30px; }
+
+.register-step2 .ui-form-explain {
+  text-align: center; }
+
+.register-step2 .ui-button.submit {
+  width: 180px;
+  margin-left: 68px; }
+
+.register-step2 .ui-button.ui-button-ldisable {
+  background: #ddd; }
+
+.register-step2 .ui-button.reget {
+  font-weight: normal; }
+
+.register-result {
+  padding-bottom: 150px; }
+  .register-result .text {
+    text-align: center;
+    line-height: 1.8;
+    color: #666; }
+    .register-result .text .iconfont.done {
+      font-size: 120px;
+      color: #a7d94f; }
+    .register-result .text.text-strong {
+      padding-bottom: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333; }
+
+/* 供货商注册 */
+.register-statement-inner {
+  position: relative;
+  padding: 30px 30px 30px 80px;
+  margin-bottom: 40px;
+  border: 1px solid #b2e2ea;
+  background: #e5f2f8; }
+  .register-statement-inner .iconfont {
+    position: absolute;
+    left: 30px;
+    top: 22px;
+    color: #68b5e2;
+    font-size: 36px; }
+  .register-statement-inner dt {
+    font-size: 18px; }
+  .register-statement-inner dd {
+    line-height: 1.8; }
+
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+/* 找回密码 */
+.forget-form {
+  width: 680px;
+  margin: 0 auto; }
+  .forget-form .ui-input {
+    width: 220px; }
+  .forget-form .reset-tiptext {
+    color: #999;
+    padding: 0 0 30px 100px; }
+    .forget-form .reset-tiptext strong {
+      font-size: 18px;
+      font-weight: normal;
+      color: #666; }
+  .forget-form .text-mobile {
+    font-size: 18px;
+    font-weight: normal;
+    color: #666; }
+
+.ui-upload-thumb {
+  text-align: center; }
+  .ui-upload-thumb:after {
+    content: " ";
+    height: 100%; }
+  .ui-upload-thumb img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%; }
+  .ui-upload-thumb:after, .ui-upload-thumb img {
+    display: inline-block;
+    vertical-align: middle; }
+
+/* list下划线 */
+.bindmob .register-form {
+  width: 800px;
+  padding-top: 50px;
+  margin: 0 auto; }
+  .bindmob .register-form .ui-button.submit {
+    width: 160px; }
+
+.bindmob .bmob-tips {
+  margin-bottom: 50px; }
+
+.bindmob .skip {
+  display: inline-block;
+  margin-left: 30px;
+  color: #0ae; }
+
+.passport-step {
+  width: 800px;
+  margin: 80px auto; }

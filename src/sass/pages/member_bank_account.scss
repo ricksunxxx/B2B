@@ -1,0 +1,305 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+//账户信息
+// .bank-account-info {
+//     .member-bank-account-info {
+//         padding: 40px 0 60px;
+//         .member-bank-account-info-left,
+//         .member-bank-account-info-right {
+//             float: left;
+//         }
+//         .member-bank-account-info-left {
+//             width: 200px;
+//             margin-left: 100px;
+//         }
+//         .member-bank-account-info-right {
+//             width: 620px;
+//             padding-top: 20px;
+//         }
+//         .member-bank-account-info-list {
+//             width: 300px;
+//             font-size: 14px;
+//             li {
+//                 padding: 5px 0;
+//             }
+//             .name {
+//                 padding: 0 5px;
+//                 font-size: 18px;
+//             }
+//             .username,
+//             .loginname {
+//                 color: #00AAEE;
+//                 padding-right: 10px;
+//             }
+//         }
+//         .avatar {
+//             width: 100px;
+//             height: 100px;
+//             margin-top: 5px;
+//             overflow: hidden;
+//             border-radius: 50%;
+//             border: 1px solid #ddd;
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+//     .account-balance {
+//         p {
+//             line-height: 50px;
+//             padding-left: 20px;
+//             font-size: 14px;
+//             background: #f8f8f8;
+//             border: 1px solid #e6e6e6;
+//             .money {
+//                 color: #FF784F;
+//             }
+//         }
+//     }
+// }
+//账户充值
+.account-recharge {
+    margin-top: 20px;
+    .ui-grid-4,
+    .ui-grid-20 {
+        margin: 0;
+    }
+    .account-balance {
+        .des {
+            border: 1px solid #ddd;
+            border-right: none;
+            font-size: 14px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+        }
+        p {
+            line-height: 60px;
+            padding-left: 40px;
+            font-size: 14px;
+            // background: #f8f8f8;
+            border: 1px solid #e6e6e6;
+            .money {
+                color: #FF784F;
+            }
+            a {
+                float: right;
+                margin-right: 20px;
+                color: #0AE;
+            }
+        }
+    }
+    .recharge {
+        p {
+            font-size: 14px;
+            padding-left: 20px;
+            height: 60px;
+            line-height: 60px;
+        }
+        .recharge-money {
+            .ui-grid-4 {
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-right: none;
+                font-size: 14px;
+            }
+            .ui-grid-20 {
+                border: 1px solid #ddd;
+                font-size: 14px;
+                height: 60px;
+                line-height: 60px;
+                input {
+                    margin-left: 40px;
+                }
+                span {
+                    padding-left: 5px;
+                    b {
+                        color: #FF784F;
+                    }
+                }
+            }
+        }
+        .payment {
+            .ui-grid-4 {
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-top: none;
+                border-right: none;
+                font-size: 14px;
+            }
+            .ui-grid-20 {
+                border: 1px solid #ddd;
+                border-top: none;
+                height: 60px;
+                overflow: hidden;
+                span {
+                    display: inline-block;
+                    width: 140px;
+                    height: 100%;
+                    margin-left: 40px;
+                    line-height: 60px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    input,
+                    img {
+                        width: auto;
+                        height: auto;
+                        max-width: 100px;
+                        max-height: 50px;
+                        vertical-align: middle;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        // .payment-platform {
+        //     .ui-grid-4 {
+        //         height: 300px;
+        //         border: 1px solid #ddd;
+        //         border-top: none;
+        //         border-right: none;
+        //         font-size: 14px;
+        //         text-align: center;
+        //         .platform-des {
+        //             padding-top: 116px;
+        //             .sub-des {
+        //                 display: block;
+        //                 color: #ccc;
+        //             }
+        //         }
+        //     }
+        //     .ui-grid-20 {
+        //         height: 300px;
+        //         border: 1px solid #ddd;
+        //         border-top: none;
+        //         .platform {
+        //             padding-bottom: 20px;
+        //             span {
+        //                 display: inline-block;
+        //                 width: 140px;
+        //                 height: 50px;
+        //                 margin: 20px 0 0 40px;
+        //                 line-height: 50px;
+        //                 &:hover {
+        //                     cursor: pointer;
+        //                 }
+        //                 input,
+        //                 img {
+        //                     vertical-align: middle;
+        //                     &:hover {
+        //                         cursor: pointer;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        .btn-recharge {
+            width: 941px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-top: none;
+            #J_submit_recharge {
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+//仓租费用查询
+.warehouse-fee {
+    .ui-select {
+        width: 146px;
+    }
+    .ui-table {
+        border: none;
+    }
+    .member-tabs-bd {
+        border-top: 1px solid #D9D9D9;
+    }
+}
+
+//账户信息 （合并原来的账号信息和账户明细）
+.bank-account-detail {
+    .ui-select {
+        width: 146px;
+    }
+    .ui-table {
+        border: none;
+    }
+    .member-tabs-bd {
+        border-top: 1px solid #D9D9D9;
+    }
+    .member-form-col3 .ui-form-item {
+        padding-left: 81px;
+    }
+    .member-form-col3 .member-form-query-btns {
+        padding-right: 10px;
+    }
+    .ui-table {
+        td {
+            padding: 20px 9px 20px;
+        }
+    }
+    .member-bank-account-info {
+        padding: 40px 0 40px;
+        .member-bank-account-info-left,
+        .member-bank-account-info-right {
+            float: left;
+        }
+        .member-bank-account-info-left {
+            width: 200px;
+            margin-left: 100px;
+        }
+        .member-bank-account-info-right {
+            width: 600px;
+        }
+        .member-bank-account-info-list {
+            width: 300px;
+            font-size: 14px;
+            li {
+                padding: 5px 0;
+            }
+            .name {
+                padding: 0 5px;
+                font-size: 18px;
+            }
+            .rmb {
+                color: #FF7800;
+                padding-right: 10px;
+            }
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            margin-top: 5px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//我的消息
+.member-message {
+    .member-message-item {
+        .title {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .not-read {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>订单详情-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/member.css">
+</head>
+<body>
+    <div class="ui-page-wrap s-member">
+        <div id="J_global_header" class="s-m-header m-header">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/s_logo.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href=""><i class="icon-message iconfont">&#xe617;</i>消息</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="">用户中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe602;</i>我的产品
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品刊登</a>
+                                                </li>                                 
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品管理</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe619;</i>订单管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item active">
+                                                    <a class="link" href="">订单查询</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61d;</i>我的账户
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="s_member_account_management_base.html">个人信息管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">我的消息</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <h3 class="member-head-title">订单详情</h3>
+                                </div>
+                                <div class="member-order-detail member-main-inner ui-content-padding">
+                                    <div class="detail-section">
+                                        <div class="detail-section-hd"><h3 class="title">商品清单</h3></div>
+                                        <div class="detail-section-bd ui-table-container">
+                                            <table class="ui-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="40%">商品名称</th>
+                                                        <th width="20%">商品编号</th>
+                                                        <th width="10%">属性</th>
+                                                        <th width="10%">应付价(RMB)</th>
+                                                        <th width="10%">实付价(RMB)</th>
+                                                        <th>数量</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ui-panel-mini ui-panel">
+                                                                <div class="ui-panel-thumb">
+                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                    </a>    
+                                                                </div>
+                                                                <div class="ui-panel-text">
+                                                                    <div class="ui-panel-text-inner">
+                                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                        </a>    
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </td>
+                                                        <td>953001-P-201510</td>
+                                                        <td>规格：1盒</td>
+                                                        <td>55.00</td>
+                                                        <td>--</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ui-panel-mini ui-panel">
+                                                                <div class="ui-panel-thumb">
+                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                    </a>    
+                                                                </div>
+                                                                <div class="ui-panel-text">
+                                                                    <div class="ui-panel-text-inner">
+                                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                        </a>    
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </td>
+                                                        <td>953001-P-201510</td>
+                                                        <td>规格：1盒</td>
+                                                        <td>55.00</td>
+                                                        <td>--</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                </tbody>    
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="detail-section">
+                                        <div class="detail-section-hd"><h3 class="title">订单基本信息</h3></div>
+                                        <div class="detail-section-bd ui-form">
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">订单编号：</label>
+                                                <span class="ui-form-text">SO9361916032600068</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">自定义编号：</label>
+                                                <span class="ui-form-text">SO9361916032600068</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">物流商单号：</label>
+                                                <span class="ui-form-text">DOH9466816032100006</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">订单编号：</label>
+                                                <span class="ui-form-text">SO9361916032600068</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">创建时间：</label>
+                                                <span class="ui-form-text">2016-03-26 15:10:03</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">付款时间：</label>
+                                                <span class="ui-form-text">2016-03-26 15:10:03</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">出货时间：</label>
+                                                <span class="ui-form-text">--</span>
+                                            </div>
+                                            <div class="ui-form-item full">
+                                                <label class="ui-label">备注：</label>
+                                                <p class="ui-form-text">--</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col4 detail-section">
+                                        <div class="detail-section-hd"><h3 class="title">支付信息与物流信息</h3></div>
+                                        <div class="detail-section-bd ui-form">
+                                            <div class="ui-form-item full">
+                                                <label class="ui-label">支付状态：</label>
+                                                <span class="ui-form-text">已支付</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">订单总金额：</label>
+                                                <span class="ui-form-text">￥344.58</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">货款：</label>
+                                                <span class="ui-form-text">￥299.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">进口关税：</label>
+                                                <span class="ui-form-text">￥45.58</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">物流运费：</label>
+                                                <span class="ui-form-text">￥0.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">偏远地区费：</label>
+                                                <span class="ui-form-text">￥0.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付总金额：</label>
+                                                <span class="ui-form-text">￥344.58</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付货款：</label>
+                                                <span class="ui-form-text">￥299.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付货款：</label>
+                                                <span class="ui-form-text">￥299.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付进口关税：</label>
+                                                <span class="ui-form-text">￥45.58</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付物流运费：</label>
+                                                <span class="ui-form-text">￥0.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">实付偏远地区费：</label>
+                                                <span class="ui-form-text">￥0.0</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">物流渠道：</label>
+                                                <span class="ui-form-text">包邮</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">物流公司：</label>
+                                                <span class="ui-form-text">天天快递</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">物流单号：</label>
+                                                <span class="ui-form-text">95284135784421</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail-section">
+                                        <div class="detail-section-hd">
+                                            <h3 class="title">收件人信息<a href="javascript:;" class="addr-edit" id="J_addr_edit">修改</a></h3>
+                                        </div>
+                                        <div class="detail-section-bd ui-form">
+                                            <div class="ui-form-item full">
+                                                <label class="ui-label">收货人：</label>
+                                                <span class="ui-form-text">詹姆斯·土肥圆</span>
+                                            </div>
+                                            <div class="ui-form-item full">
+                                                <label class="ui-label">收货人身份证：</label>
+                                                <span class="ui-form-text">612415198007127953</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">手机：</label>
+                                                <span class="ui-form-text">18617038121</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">电话：</label>
+                                                <span class="ui-form-text">--</span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">邮编：</label>
+                                                <span class="ui-form-text">--</span>
+                                            </div>
+                                            <div class="ui-form-item full">
+                                                <label class="ui-label">详细地址：</label>
+                                                <span class="ui-form-text">广东省 深圳市 宝安区  西乡宝源路财富港大厦D座</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail-section" id="J_historys">
+                                        <div class="detail-section-hd"><h3 class="title" id="exceptions">异常信息</h3></div>
+                                        <div class="detail-section-bd">
+                                            <div class="except-box">
+                                                <div class="except-box-head">
+                                                    <div class="right">
+                                                        <span class="time">时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫</span>
+                                                        <span class="trigger"></span>
+                                                    </div>
+                                                    <h4 class="title">身份证异常</h4>
+                                                    <p class="desc">身份证与本人不相匹配</p>
+                                                </div>
+                                                <div class="except-box-content">
+                                                    <div class="except-box-items">
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>                                                          
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="except-box">
+                                                <div class="except-box-head">
+                                                    <div class="right">
+                                                        <span class="time">时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫</span>
+                                                        <span class="trigger"></span>
+                                                    </div>
+                                                    <h4 class="title">身份证异常</h4>
+                                                    <p class="desc">身份证与本人不相匹配</p>
+                                                </div>
+                                                <div class="except-box-content">
+                                                    <div class="except-box-items">
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>
+                                                        <div class="except-box-item">
+                                                            <p class="infos">
+                                                                时间：2016/07/14 23:33&nbsp;&nbsp;处理人：罗豪鑫
+                                                            </p>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                        </div>                                                          
+                                                    </div>
+                                                </div>
+                                            </div>                                         
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="J_address_form" style="display:none;">
+            <div class="address-form ui-form">
+                <div class="ui-form-item">
+                    <label class="ui-label" for="uname">收货人：</label>  
+                    <input type="text" class="ui-input" value="" id="uname">
+                    <span class="ui-form-required">*</span>
+                    <span class="ui-form-explain"></span>
+                </div>
+                <div class="ui-form-item">
+                    <label class="ui-label" for="umobile">手机：</label>  
+                    <input type="text" class="ui-input" value="" id="umobile">
+                    <span class="ui-form-required">*</span>
+                    <span class="ui-form-explain"></span>
+                </div>
+                <div class="ui-form-item">
+                    <label class="ui-label" for="uid">身份证号码：</label>  
+                    <input type="text" class="ui-input" value="" id="uid">
+                    <span class="ui-form-required">*</span>
+                    <span class="ui-form-explain"></span>
+                </div>
+                <div class="ui-form-item">
+                    <label class="ui-label" for="utel">电话：</label>  
+                    <input type="text" class="ui-input" value="" id="utel">
+                    <span class="ui-form-explain"></span>
+                </div>
+                <div class="ui-form-item">
+                    <label class="ui-label" class="ui-label">所在地区：</label>
+                    <div class="address-select" id="J_cityselect">
+                        <input type="text" class="ui-input" id="J_province" placeholder="省">
+                        <input type="text" class="ui-input" id="J_city" placeholder="市">
+                        <input type="text" class="ui-input" id="J_area" placeholder="区">
+                    </div>
+                    <span class="ui-form-required">*</span>
+                    <span class="ui-form-explain"></span>
+                </div>           
+                <div class="ui-form-item">
+                    <label class="ui-label" for="uroad">详细地址：</label>  
+                    <input type="text" class="ui-input" value="" id="uroad">
+                    <span class="ui-form-required">*</span>
+                    <span class="ui-form-explain"></span>
+                </div>
+                <div class="ui-form-item">
+                    <label class="ui-label" for="uzip">邮编：</label>
+                    <input type="text" class="ui-input" value="" id="uzip">
+                    <span class="ui-form-explain"></span>
+                </div>                       
+            </div>            
+        </div>
+
+        <div class="s-m-footer">
+            <div class="s-m-footer-inner ui-container">
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/member.js"></script>
+    <script src="../dist/js/s_order.js"></script>
+    <script>window.sorder && sorder.detail();</script>
+</body>
+</html>

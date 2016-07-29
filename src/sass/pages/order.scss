@@ -1,0 +1,170 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+// .stickybar.fixed {
+// 	position: fixed;
+// 	bottom: 0!important;
+// }
+
+.stickybar-inner {
+	width: 1148px;
+	margin: 0  auto;
+	padding: 10px;
+}
+
+.form-text {
+	display: inline-block;
+    margin-top: 6px;
+	font-size: 14px;
+    line-height: 18px;
+    color: $text-color-dark;
+}
+.form-desc {
+	padding-top: 2px;
+	color: $text-color-pale;
+}
+
+.order-tiptext {
+	padding: 10px 20px;
+	margin-bottom: 30px;
+
+	.ui-tiptext-head {
+		font-size: 14px;
+		.iconfont {
+			color: #68b5e2;
+		}
+	}
+}
+
+.order-form {
+	margin-top: 40px;
+	padding-bottom: 40px;
+
+	.order-form-inner {
+		padding: 30px 20px 20px 20px;
+		border-top: 1px solid #ddd;
+		background-color: #fbfbfb;
+	}
+
+	.ui-input {
+		width: 300px;
+	}
+	.ui-select {
+		width: 101px;
+		padding: 4px 20px;
+		margin-right: 5px;
+	}
+	.address-select {
+		display: inline-block;
+		// margin-bottom: 10px;
+	}
+	.address-input {
+		width: 400px;
+	}
+	.address-textarea {
+		width: 400px;
+		height: 160px;
+		padding: 7px 9px;
+	}
+}
+
+.order-settlebar {
+	.stickybar-inner {
+
+	}
+	.settle {
+		// display: inline-block;
+		// vertical-align: top;
+	} 
+
+	.row {
+		padding-bottom: 5px;
+		line-height: 18px;
+	}
+
+	.pale {
+		color: $text-color-normal;
+	}
+
+	.price,
+	.tip {
+		text-align: right;
+	}
+	
+	.label {
+		display: inline-block;
+		margin-right: 20px;
+		width: 220px;
+		text-align: right;
+	}
+	.value {
+		display: inline-block;
+		min-width: 100px;
+		text-align: right;
+	}
+
+	.tip {
+		color: $text-color-pale;
+	}
+
+	.alink {
+		display: inline-block;
+		padding: 18px 20px 0 10px;
+	    color: #0ae;
+	    font-size: 14px;
+	    vertical-align: top;		
+	}
+	
+	.price {
+		font-size: $font-size-md;
+		color: $text-color-dark;
+	}
+
+	.size {
+		padding-right: 30px;
+		.highlight {
+			padding-right: 3px;
+		}
+	}
+
+	.highlight {
+		color: $text-color-highlight;
+	}
+
+	.total {
+		font-size: $font-size-xl;
+	}
+
+	.submit {
+		margin: 7px 0 0 10px;
+	    height: 44px;
+	    width: 126px;
+	    font-size: 18px;
+	}
+	.fn-rmb {
+		padding: 0 0 0 5px;
+	}
+}
+
+.order-body {
+	.shopping-table-item {
+		&.failed {
+			border: 2px solid #f28c8d;
+			background: #fffbf3;
+		}
+		.spnostock {
+			display: inline-block;
+			padding: 2px 5px;
+			line-height: 16px;
+			font-size: 12px;
+			background: #ed4c4e;
+			color: #fff;
+			border-radius: 2px;
+			text-align: left;
+		}
+	}
+
+	.props {
+		width: 200px;
+	}
+}

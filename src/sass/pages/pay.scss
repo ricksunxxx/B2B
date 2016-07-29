@@ -1,0 +1,428 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+@import "../ui/tipbox";
+
+.pay-body {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px 0 100px;
+	.highlight {
+		color: $text-color-highlight;
+	}
+}
+.pay-head {
+	margin-top: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid $border-color-dark;
+	
+	.info-left {
+		width: 640px;
+	}
+
+	.info-left-code {
+		font-size: 18px;
+		a {
+			color: #333;
+			&:hover {
+				color: $text-color-link;
+			}
+		}
+	}
+
+	.title {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	.pay-price {
+		display: inline-block;
+		margin-top: 7px;
+		font-size: 16px;
+
+		.fn-rmb {
+			padding: 0;
+		}
+
+		.number {
+			font-size: 22px;
+		}
+	}
+	.desc {
+		padding-top: 2px;
+	}
+}
+
+.pay-main {
+	.fn-rmb {
+		padding: 0;
+	}
+	.tip-warning {
+		// display: none;
+		margin-left: 10px;
+		padding: 3px 5px;
+
+		.iconfont {
+			font-size: 12px;
+		    vertical-align: top;
+		    padding: 0;
+		    margin-top: 6px;
+		}
+	}
+	.pay-account {
+		padding: 40px 20px 0;
+		.pay-account-item {
+			display: inline-block;
+			margin-right: 30px;
+			font-size: 14px;
+		}
+	}
+	.label {
+		font-size: 14px;
+	}
+
+	.price {
+		font-size: 16px;
+	}
+
+	.pay-type {
+		padding-top: 30px;
+
+		.pay-type-head {
+			height: 42px;
+			
+			.title {
+				display: inline-block;
+				height: 42px;
+				margin-bottom: -2px;
+				line-height: 42px;
+				font-size: 18px;
+
+				.iconfont {
+					font-size: 24px;
+				}
+			}
+		}
+		
+		.pay-type-group {
+			padding-bottom: 30px;
+
+			.checkbox {
+				position: relative;
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				box-shadow: inset 0 2px 2px #ddd;
+				background: #fff;
+				vertical-align: top;
+				cursor: pointer;
+				
+				&:hover {
+					border-color: red;	
+				}
+			}
+
+			.checkbox-trigger {
+				cursor: pointer;
+				&:hover {
+					.checkbox {
+						border-color: red;	
+					}
+					.label {
+						color: #666;
+					}
+				}
+
+				&.checked {
+					.checkbox {
+						border-color: red;
+
+						&:after {
+							position: absolute;
+							top: 2px;
+							left: 3px;
+							font-family: "iconfont";
+							content: '\e616';
+							font-size: 16px;
+							line-height: 1;
+							color: red;
+							font-style: normal;
+						}
+					}
+				}
+			}
+		}
+		.pay-type-group-item {
+			border-bottom: 1px solid #ddd;
+			border-top: 1px solid #fff;
+			padding: 20px;
+
+			.label {
+				font-size: 16px;
+				font-weight: normal;
+			}
+
+			.price {
+				display: none;
+			}
+			
+			.text-pale {
+				line-height: 2;
+				color: #666;
+			}
+			.ui-dl-horizontal {
+				padding-left: 160px;
+				>dt {
+					margin-left: -160px;
+				}
+				>dd {
+					width: 100%;
+				}
+			}
+
+			&:first-child {
+				border-top: 1px solid #ddd;
+			}
+
+			&.active {
+				border: 1px solid #a6cbf4;
+				outline: 1px solid #a6cbf4;
+				padding-left: 19px;
+				padding-right: 19px;
+				
+				.price {
+					display: block;
+				}
+			}
+		}
+	}
+	
+	.pay-bank {
+		float: left;
+		width: 500px;
+	}
+	.pay-bank-list {
+		// width: 890px;
+		padding-left: 1px;
+		.pay-bank-item {
+			position: relative;
+			float: left;
+			margin-right: 20px;
+			border: 1px solid #ddd;
+			overflow: hidden;
+			outline: 1px solid #fff;
+			display: table;
+			
+			&,
+			>a {
+				// width: 200px;
+				// height: 100px;	
+				width: 100px;
+				height: 50px;			
+			}
+
+			&:hover {
+				border-color: #f4b7b7;
+				outline-color: #f4b7b7;
+			}
+
+			&.active {
+				border-color: red;
+				outline-color: red;
+
+				&:after {
+					position: absolute;
+					right: -1px;
+					bottom: 0;
+					content: '\e62d';
+					color: red;
+					font-family: 'iconfont';
+					font-size: 26px;
+					line-height: 26px;		
+				}
+			}
+
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+			img {
+				max-height: 100%;
+				max-width: 100%;
+				vertical-align: middle;
+			}
+		}
+	}
+	.submit.ui-button {
+		height: 46px;
+		padding: 0 40px;
+		line-height: 44px;
+		font-size: 16px;
+	}
+
+}
+
+.pay-main .pay-account {
+	padding-left: 0;
+	padding-right: 0;
+}
+.pay-account-head {
+	padding: 0 0 10px 20px;
+	.bill-item {
+		font-size: 18px;
+		&.than {
+			margin-left: 20px;
+			padding-left: 20px;
+			color: #999;
+			border-left: 1px solid #ddd;
+		}
+	}
+	.price {
+		font-size: 28px;
+	}
+}
+.pay-account-table {
+	padding: 20px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #f5f5f5;
+
+	table {
+		width: 100%;
+	}
+	.account-td {
+		width: 33%;
+		text-align: center;
+		border-left: 1px solid #ddd;
+		&:first-child {
+			border-left: none;
+		}
+	}
+	.account-item {
+		display: inline-block;
+		text-align: left;
+
+		.label {
+			font-size: 12px;
+			color: #999;
+		}
+		.value {
+			color: #666;
+			font-size: 28px;
+		}
+	}
+}
+
+.lock-tips {
+	margin-top: 40px;
+	.ui-tipbox-content {
+		padding-right: 20px;
+	}
+}
+
+.result-tipbox {
+	text-align: left;
+	.ui-tipbox-icon {
+		top: 16px;
+		left: 69px;
+		.iconfont {
+			font-size: 60px;
+			line-height: 60px;
+		}
+	}
+	.ui-tipbox-content {
+		font-size: 16px;
+		margin-left: 136px;
+	}
+}
+.lock-box-ft {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.pay-type-inner {
+	width: 880px;
+	margin: 0 auto;
+	padding: 20px 0 30px;
+	overflow: hidden;
+}
+
+.pay-wait {
+	padding-top: 20px;
+	.text {
+		padding-bottom: 20px;
+	}
+	.ui-button {
+		margin: 0 5px;
+	}
+}
+
+.pay-result {
+	.messages {
+		width: 420px;
+		margin: 100px auto;
+		
+		.ui-tipbox-icon {
+			top: 20px;
+			left: 50px;
+		}
+		.main {
+			font-size: 16px;
+			font-weight: normal;
+			line-height: 32px;	
+		}
+
+		.iconfont {
+			font-size: 30px;
+			vertical-align: top;
+		
+			&.successed {
+				color: $text-color-success;
+			}
+			&.failed,
+			&.error {
+				color: $text-color-error;
+			}
+		}
+		.code {
+			padding-right: 20px;
+		}
+	}
+}
+
+.pay-exception-tip {
+	width: 500px;
+	margin: 200px auto 0;
+
+	.icon-mail {
+		float: left;
+		width: 128px;
+		height: 138px;
+		background: url(../images/icon_mail.png) no-repeat 0 0;
+	}
+	.message {
+		float: left;
+		padding: 24px 0 0 40px;
+
+		.title {
+			color: #e85d46;
+			font-size: 24px;
+		}
+		.reason {
+			font-size: 16px;
+		}
+		.desc {
+			font-size: 14px;
+			color: #999;
+
+			a {
+				display: inline-block;
+				margin: 0 3px;
+			}
+		}
+	}
+}

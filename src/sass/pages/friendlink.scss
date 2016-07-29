@@ -1,0 +1,39 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.fl-banner {
+	width: 100%;
+	height: auto;
+
+	img {
+		width: 100%;
+		max-width: 1920px;
+	}	
+}
+
+.fl-intro-content {
+	margin: 40px 0 40px;
+	padding: 40px 20px;
+	border: 1px solid #ddd;
+
+	img {
+		width: 513px;
+		height: 98px;
+	}
+	
+	.fl-intro-text {
+		margin-top: 10px;
+	    padding: 3px 0 5px 70px;
+	    line-height: 1.6;
+	    border-left: 1px dashed #ddd;
+
+		h4 {
+			font-size: 14px;
+		}
+
+		.highlight {
+			color: red;
+		}
+	}
+
+}

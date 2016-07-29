@@ -1,0 +1,42 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+ /* 供应商会员中心首页 */
+.s-member-userinfo {
+	.member-userinfo-list {
+		width: auto;
+		padding-top: 20px;
+		overflow: hidden;
+
+		li {
+			float: left;
+			width: 310px;
+		}
+
+		.label {
+			display: inline-block;
+			width: 80px;
+			text-align: right;
+		}
+	}
+}
+
+.s-member-idets {
+	padding-left: 20px;
+
+	.ui-dl-horizonta {
+
+		padding: 20px 0 20px 120px;
+		border-top: 1px solid #ddd;
+
+		dt {
+			margin-left: -120px;
+			font-size: 18px;
+		}
+		dd {
+			width: 200px;
+			padding-bottom: 5px;
+			line-height: 2.2;
+		}
+	}
+}

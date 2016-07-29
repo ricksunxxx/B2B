@@ -1,0 +1,174 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 供应商 */
+.account-bank {
+	padding-top: 50px;
+
+	.account-bank-infos {
+		li {
+			padding: 30px 20px 10px 20px;
+			line-height: 1.8;
+			border-bottom: 1px solid $border-color-normal;
+			font-size: $font-size-xn;
+		}
+
+		.label,
+		.value {
+			display: inline-block;
+		}
+		.label {
+			width: 300px;
+			font-size: 16px;
+			color: #333;
+		}
+		.value {
+			color: #666;
+		}
+	}	
+}
+
+.form-text-strong {
+	font-size: 18px;
+    font-weight: normal;
+    color: $text-color-normal;
+}
+
+.capital-list {
+	border-right: 1px solid $border-color-normal;
+
+	li {
+		padding-bottom: 5px;
+
+		&:last-child {
+			padding-top: 10px;
+		}
+	}
+	.strong {
+		padding-right: 5px;
+		font-size: 18px;
+	}
+
+	.icon-help {
+		display: inline-block;
+		margin: 2px 0 0 8px;
+		color: $text-color-link;
+		cursor: pointer;
+		vertical-align: top;
+
+		&:hover {
+			color: $text-color-normal;
+		}
+	}
+}
+
+.cumul-list,
+.capital-list {
+	margin-top: 30px;
+}
+.cumul-list {
+	overflow: hidden;
+	padding-left: 80px;
+
+	li {
+		width: 250px;
+		padding: 2px 0 5px 0;
+		line-height: 1.8;
+		float: left;
+	}
+
+	.number {
+		padding-right: 3px;
+	}
+}
+
+.account-detail {
+	padding-top: 30px;
+
+	.ui-title-nav {
+		margin-top: 10px;
+	}
+
+	.account-detail-form {
+		padding: 20px 18px 0 0;
+		margin-top: 10px;
+		background: $bg-color-pale;
+		border-bottom: 1px solid $border-color-normal;
+		border-top: 2px solid $border-color-normal;
+	}
+}
+
+// 我的消息
+.member-message {
+	.checkbox-wrap {
+		padding-right: 20px;
+	}
+
+	.member-message-hd {
+		height: 42px;
+		padding: 0 10px;
+		line-height: 40px;
+		border-bottom: 1px solid #ddd;
+		background: #efefef;
+	}
+
+	.ui-button.batchdel {
+		&:hover {
+			border: 1px solid #d43f3a;
+		    background-color: #d9534f;
+		    color: #fff;
+		}
+	}
+	.member-message-list {
+
+	}
+	.member-message-item {
+		padding-top: 10px;
+		border-bottom: 1px solid #ddd;
+
+		.block {
+			display: inline-block;
+			height: 32px;
+			padding: 5px 10px;
+			line-height: 32px;
+
+			&.checkbox {
+				width: 40px;
+			}
+
+			&.title {
+				width: 550px;
+			}
+
+			&.time {
+				width: 200px;
+				color: $text-color-pale;
+			}
+
+			&.read,
+			&.remove {
+				padding: 5px;
+				color: $text-color-link;
+				cursor: pointer;
+			}
+		}
+
+		.content {
+			display: none;
+			padding: 10px;
+			border-top: 1px solid #ddd;
+			background: #fbfbfb;
+		}
+		
+		&.unread {
+			.title {
+				font-weight: bold;				
+			}
+		}
+
+		&.null {
+			padding: 40px 0;
+			text-align: center;
+		}
+	}
+}

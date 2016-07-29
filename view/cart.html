@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>采购车-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/shopping.css">
+</head>
+<body>
+    <div class="ui-page-wrap">
+        <div id="J_global_header" class="m-header ui-fixed">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/logo_m.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[
+                                <a class="link" href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">我要销售商品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="m-header-nav">
+                        <ul class="m-header-nav-list">
+                            <li class="m-header-nav-item"><a title="首页" href="">首页</a></li>
+                            <li class="m-header-nav-item"><a title="货源" href="">货源</a></li>
+                            <li class="m-header-nav-item"><a title="关于我们" href="">关于我们</a></li>
+                            <li class="m-header-nav-item"><a title="帮助中心" href="">帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div class="m-header-search">
+                        <form action="" id="J_form_search">
+                            <div class="m-header-search-inner">
+                                <label for="J_search_kw" class="iconfont">&#xe62b;</label>
+                                <input type="text" name="k" value="" placeholder="请输入关键词" class="m-header-search-input" id="J_search_kw">
+                            </div>
+                        </form>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="cart-wrap ui-container">
+                <div class="shopping-step">
+                    <ol class="ui-step ui-step-4">
+                        <li class="ui-step-start ui-step-active">
+                            <div class="ui-step-line">-</div>
+                            <div class="ui-step-icon">
+                                <i class="iconfont">&#xe60b;</i>
+                                <i class="ui-step-number">1</i>
+                                <span class="ui-step-text">选择产品</span>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="ui-step-line">-</div>
+                            <div class="ui-step-icon">
+                                <i class="iconfont">&#xe60b;</i>
+                                <i class="ui-step-number">2</i>
+                                <span class="ui-step-text">确认采购信息</span>
+                            </div>
+                        </li>
+                        <li class="">
+                            <div class="ui-step-line">-</div>
+                            <div class="ui-step-icon">
+                                <i class="iconfont">&#xe60b;</i>
+                                <i class="ui-step-number">3</i>
+                                <span class="ui-step-text">结算支付</span>
+                            </div>
+                        </li>
+                        <li class="ui-step-end">
+                            <div class="ui-step-line">-</div>
+                            <div class="ui-step-icon">
+                                <i class="iconfont">&#xe60b;</i>
+                                <i class="iconfont ui-step-number">&#xe616;</i>
+                                <span class="ui-step-text">完成</span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="cart-body" id="J_cart_main">
+                    <!-- 购物车为空时
+                    <div class="cart-empty">
+                        <i class="iconfont">&#xe603;</i>
+                        <p class="text">购物车空空如也，<a class="link" href="">去逛逛吧</a>！</p>
+                    </div> -->
+                    <form action="" id="J_form_cart">
+                        <h3 class="shopping-head-title ui-title-md"><i class="iconfont">&#xe603;</i>我的采购车</h3>
+                        <div class="shopping-table ui-table-inbox">
+                            <table class="ui-table">
+                                <thead>
+                                    <tr>
+                                        <th width="6%">
+                                            <input type="checkbox" class="selectall ui-checkbox" id="J_select_all_hd"><label for="J_select_all_hd" class="label">全选</label>
+                                        </th>
+                                        <th width="30%">商品</th>
+                                        <th width="10%">商品编号</th>
+                                        <th width="10%">价格</th>
+                                        <th width="10%">销售规格(件)</th>
+                                        <th width="10%">可用库存(件)</th>
+                                        <th width="10%">数量</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="shopping-table-item" data-itemid="9023">
+                                        <td><span class="tag-off">已下架</span></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>3</td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9033">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="shopping-table-item" data-itemid="9025">
+                                        <td><input type="checkbox" class="selectsub ui-checkbox"></td>
+                                        <td>
+                                            <div class="ui-panel-mini ui-panel">
+                                                <div class="ui-panel-thumb">
+                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                    </a>    
+                                                </div>
+                                                <div class="ui-panel-text">
+                                                    <div class="ui-panel-text-inner">
+                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                        </a><br>
+                                                        <i class="tag iconfont">&#xe618;</i>    
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </td>
+                                        <td>952970</td>
+                                        <td>980.00</td>
+                                        <td>2</td>
+                                        <td>125</td>
+                                        <td>
+                                            <div class="cart-counter m-counter m-counter-md" data-max="6">
+                                                <span class="m-counter-minus"><i class="iconfont">&#xe607;</i></span>
+                                                <span class="m-counter-count"><input type="text" value="1"></span>
+                                                <span class="m-counter-plus"><i class="iconfont">&#xe60d;</i></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="remove" href="javascript:;">删除</a><br>
+                                            <a class="follow" href="javascript:;">关注该商品</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="cart-controlbar stickybar fn-clear" id="J_stickybar">
+                                <div class="stickybar-inner fn-clear">
+                                    <div class="fn-left">
+                                        <span class="cart-controlbar-item">
+                                            <input type="checkbox" class="selectall ui-checkbox" id="J_select_all_ft">
+                                            <label for="J_select_all_ft" class="label">全选</label>
+                                        </span>
+                                        <span class="remove-batch cart-controlbar-item" id="J_remove_batch">
+                                            <i class="iconfont">&#xe633;</i>删除所选
+                                        </span>
+                                        <a class="cart-controlbar-item" href="">继续选品</a>                            
+                                    </div>
+                                    <div class="fn-right">
+                                        <span class="cart-controlbar-item">
+                                            已选商品<em id="J_selected_size" class="size highlight">0</em>件     
+                                        </span>
+                                    
+                                        <span class="cart-controlbar-price cart-controlbar-item">
+                                            合计不含运费<small class="fn-rmb highlight">￥</small>
+                                            <em class="total highlight" id="J_total_price">0.00</em>    
+                                        </span>
+                                        <button id="J_button_lock" class="ui-button-ldisable ui-button">采购锁库</button>
+                                        <button id="J_button_order" class="ui-button-ldisable ui-button">立即下单</button>
+                                    </div>                                    
+                                </div>
+                            </div>                             
+                        </div>
+                        <input type="hidden" name="" id="J_checked_ids">
+                    </form>
+                </div>     
+            </div>
+        </div>
+        <div class="m-footer">
+        	<div class="m-footer-inner ui-container">
+        		<p class="conc unline">
+        			<span class="tel ui-right"><i class="iconfont">&#xe628;</i>400-888-4547</span>
+        			<a class="mailto" href="mailto:seller@papago.hk"><i class="iconfont">&#xe606;</i>E-mail：seller@papago.hk</a>
+        		</p>
+        		<div class="desc unline fn-clear">
+        			<div class="col">
+	        			<dl class="desc-dl">
+	        				<dt>新手上路</dt>
+	        				<dd><a href="">新会员注册</a></dd>
+	        				<dd><a href="">选品刊登</a></dd>
+	        				<dd><a href="">下单支付</a></dd>
+	        			</dl>        				
+        			</div>
+        			<div class="col">
+	        			<dl class="desc-dl">
+	        				<dt>费用介绍</dt>
+	        				<dd><a href="">产品资料包</a></dd>
+	        				<dd><a href="">订单操作费</a></dd>
+	        				<dd><a href="">预定费及仓储费</a></dd>
+	        			</dl>        				
+        			</div>
+					<div class="col">
+						<dl class="desc-dl">
+	        				<dt>物流配送</dt>
+	        				<dd><a href="">关税说明</a></dd>
+	        				<dd><a href="">验货签收</a></dd>
+	        			</dl>						
+					</div>
+					<div class="col">
+	        			<dl class="desc-dl">
+	        				<dt>售后保障</dt>
+	        				<dd><a href="">退换货服务</a></dd>
+	        				<dd><a href="">售后赔付政策</a></dd>
+	        			</dl>						
+					</div>
+        		</div>
+        		<div class="menu unline">
+        			<ul class="menu-list">
+        				<li><a href="">关于我们</a></li>
+        				<li><a href="">帮助中心</a></li>
+        				<li><a href="">联系我们</a></li>
+        				<li><a href="">用户协议</a></li>
+        				<li><a href="">友情链接</a></li>
+        			</ul>
+        		</div>
+        		<p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+        	</div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/cart.js"></script>
+</body>
+</html>

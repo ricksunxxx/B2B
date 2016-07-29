@@ -1,0 +1,99 @@
+@import "helpers/variables";
+@import "helpers/placeholder";
+
+
+// 商品展示面板
+.m-goods {
+	.m-goods-info {
+		padding: 10px;
+	}
+	
+	.m-goods-thumb {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.m-goods-thumb,
+	.m-goods-thumb-img {
+		@include square(168px);
+		overflow: hidden;
+	}
+	.m-goods-thumb {
+		display: table;
+	}
+
+	.m-goods-thumb-img {
+        display: table-cell;
+        // width: 100%;
+        // height: 100%;
+        vertical-align: middle;
+        text-align: center;
+        
+        img {
+        	// width: 100%;
+        	max-width: 100%;
+        	max-height: 100%;
+            vertical-align: middle;
+        }
+		
+		// @extend %img-center;
+	}
+	.m-goods-name {
+		max-height: 38px;
+		overflow: hidden;
+		a {
+			display: block;
+			color: #333;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.m-goods-price-text {
+		font-size: 22px;
+		color: red;
+		.fn-rmb {
+			font-size: 14px;
+		}
+	}
+
+	&.m-goods-large {
+		width: 210px;
+		
+
+		.m-goods-thumb,
+		.m-goods-thumb-img {
+			@include square(190px);		
+		}
+		.m-goods-thumb {
+			margin: 10px auto 0; 
+		}
+	}
+
+	&.m-goods-horizontal {
+		@extend %clear;
+
+		.m-goods-thumb,
+		.m-goods-info {
+			float: left;
+		}
+		
+		&.m-goods-mini {
+			.m-goods-thumb,
+			.m-goods-thumb-img {
+				@include square(68px);		
+			}
+			.m-goods-thumb {
+				border: 1px solid #ddd;
+			}
+			.m-goods-info {
+				width: 136px;
+				padding: 0 0 0 10px;
+			}
+			.m-goods-price-text {
+				font-size: 16px;
+			}
+		}
+	}
+
+}

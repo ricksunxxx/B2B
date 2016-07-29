@@ -1,0 +1,433 @@
+.ui-button {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    display: inline-block;
+    *display: inline;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    /* Correct font family not being inherited in all browsers for <button> <input> */
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 0 20px;
+    *zoom: 1;
+    *overflow: visible;
+    /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+    background-image: none;
+    /* for old alice button style conflict */
+    .ui-button-text {
+        background: none;
+        padding: 0;
+        height: auto;
+        line-height: auto;
+    }
+    &:hover {
+        text-decoration: none;
+        background-image: none;
+        /* for old alice button style conflict */
+    }
+}
+
+input.ui-button-text,
+button.ui-button-text {
+    *vertical-align: top;
+    /* for a ie7 bug */
+}
+
+.ui-button:active {
+    position: relative;
+    top: 1px;
+    box-shadow: 1px 1px 3px #999 inset;
+}
+
+
+/* ui-button-blue */
+
+.ui-button-lblue,
+.ui-button-mblue,
+.ui-button-sblue {
+    color: #fff;
+    border: 1px solid #00aaee;
+    background-color: #00aaee;
+}
+
+.ui-button-lblue:hover,
+.ui-button-mblue:hover,
+.ui-button-sblue:hover {
+    background-color: #00a3d2;
+}
+
+a {
+    &.ui-button-lblue,
+    &.ui-button-mblue,
+    &.ui-button-sblue,
+    &.ui-button-lblue:visited,
+    &.ui-button-mblue:visited,
+    &.ui-button-sblue:visited,
+    &.ui-button-lblue:hover,
+    &.ui-button-mblue:hover,
+    &.ui-button-sblue:hover,
+    &.ui-button-lblue:active,
+    &.ui-button-mblue:active,
+    &.ui-button-sblue:active {
+        color: #fff;
+    }
+}
+
+.ui-button-lblue {
+    height: 34px;
+}
+
+.ui-button-mblue {
+    height: 28px;
+}
+
+.ui-button-sblue {
+    padding: 0 12px;
+    height: 24px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-lblue {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-mblue {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-sblue {
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+
+/* ui-button-disable */
+
+.ui-button-ldisable,
+.ui-button-mdisable,
+.ui-button-sdisable {
+    color: #999;
+    border: 1px solid #cacccd;
+    background: #cacccd;
+    cursor: default;
+}
+
+a {
+    &.ui-button-ldisable,
+    &.ui-button-mdisable,
+    &.ui-button-sdisable,
+    &.ui-button-ldisable:hover,
+    &.ui-button-mdisable:hover,
+    &.ui-button-sdisable:hover {
+        color: #999;
+        background: #cacccd;
+    }
+}
+
+.ui-button-ldisable:active,
+.ui-button-mdisable:active,
+.ui-button-sdisable:active,
+.ui-button-ldisable:hover,
+.ui-button-mdisable:hover,
+.ui-button-sdisable:hover {
+    color: #999;
+    background: #cacccd;
+}
+
+.ui-button-ldisable {
+    height: 34px;
+}
+
+.ui-button-mdisable {
+    height: 28px;
+}
+
+.ui-button-sdisable {
+    height: 24px;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-ldisable {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-mdisable {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-sdisable {
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+.ui-button-ldisable,
+.ui-button-mdisable,
+.ui-button-sdisable {
+    cursor: default !important;
+}
+
+.ui-button-ldisable:active,
+.ui-button-mdisable:active,
+.ui-button-sdisable:active {
+    position: static;
+    top: 0;
+    box-shadow: none;
+}
+
+
+/* ui-button-green */
+
+.ui-button-lgreen,
+.ui-button-mgreen,
+.ui-button-sgreen {
+    color: #fff;
+    border: 1px solid #379000;
+    background-color: #4BB402;
+}
+
+.ui-button-lgreen:hover,
+.ui-button-mgreen:hover,
+.ui-button-sgreen:hover {
+    background-color: #66BC2A;
+}
+
+a {
+    &.ui-button-lgreen,
+    &.ui-button-mgreen,
+    &.ui-button-sgreen,
+    &.ui-button-lgreen:hover,
+    &.ui-button-mgreen:hover,
+    &.ui-button-sgreen:hover,
+    &.ui-button-lgreen:active,
+    &.ui-button-mgreen:active,
+    &.ui-button-sgreen:active {
+        color: #fff;
+    }
+}
+
+.ui-button-lgreen {
+    height: 34px;
+}
+
+.ui-button-mgreen {
+    height: 28px;
+}
+
+.ui-button-sgreen {
+    padding: 0 12px;
+    height: 24px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-lgreen {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-mgreen {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-sgreen {
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+
+/* ui-button-orange */
+
+.ui-button-lorange,
+.ui-button-morange,
+.ui-button-sorange {
+    color: #fff;
+    border: 1px solid #d66500;
+    background-color: #f57403;
+}
+
+.ui-button-lorange:hover,
+.ui-button-morange:hover,
+.ui-button-sorange:hover {
+    background-color: #fb8318;
+}
+
+a {
+    &.ui-button-lorange,
+    &.ui-button-morange,
+    &.ui-button-sorange,
+    &.ui-button-lorange:hover,
+    &.ui-button-morange:hover,
+    &.ui-button-sorange:hover,
+    &.ui-button-lorange:active,
+    &.ui-button-morange:active,
+    &.ui-button-sorange:active {
+        color: #fff;
+    }
+}
+
+.ui-button-lorange {
+    height: 34px;
+}
+
+.ui-button-morange {
+    height: 28px;
+}
+
+.ui-button-sorange {
+    padding: 0 12px;
+    height: 24px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-lorange {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-morange {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-sorange {
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+
+/* ui-button-white */
+
+.ui-button-lwhite,
+.ui-button-mwhite,
+.ui-button-swhite {
+    border: 1px solid #afafaf;
+    background-color: #f3f3f3;
+    color: #777;
+}
+
+.ui-button-lwhite:hover,
+.ui-button-mwhite:hover,
+.ui-button-swhite:hover {
+    border: 1px solid #8e8e8e;
+    background-color: #fcfbfb;
+    color: #676d70;
+}
+
+a {
+    &.ui-button-lwhite,
+    &.ui-button-mwhite,
+    &.ui-button-swhite,
+    &.ui-button-lwhite:active,
+    &.ui-button-mwhite:active,
+    &.ui-button-swhite:active {
+        color: #777;
+    }
+    &.ui-button-lwhite:hover,
+    &.ui-button-mwhite:hover,
+    &.ui-button-swhite:hover {
+        color: #676d70;
+    }
+}
+
+.ui-button-lwhite {
+    height: 34px;
+}
+
+.ui-button-mwhite {
+    height: 28px;
+}
+
+.ui-button-swhite {
+    height: 24px;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-lwhite {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-mwhite {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-swhite {
+        line-height: 22px;
+        height: 22px;
+    }
+}
+
+/* ui-button-red */
+
+.ui-button-lred,
+.ui-button-mred,
+.ui-button-sred {
+    border: 1px solid #d43f3a;
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.ui-button-lred:hover,
+.ui-button-mred:hover,
+.ui-button-sred:hover {
+    border: 1px solid #ac2925;
+    background-color: #c9302c;
+    color: #fff;
+}
+
+a {
+    &.ui-button-lred,
+    &.ui-button-mred,
+    &.ui-button-sred,
+    &.ui-button-lred:active,
+    &.ui-button-mred:active,
+    &.ui-button-sred:active {
+        color: #fff;
+    }
+    &.ui-button-lred:hover,
+    &.ui-button-mred:hover,
+    &.ui-button-sred:hover {
+        color: #fff;
+    }
+}
+
+.ui-button-lred {
+    height: 34px;
+}
+
+.ui-button-mred {
+    height: 28px;
+}
+
+.ui-button-sred {
+    height: 24px;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+a {
+    &.ui-button-lred {
+        line-height: 30px;
+        height: 30px;
+    }
+    &.ui-button-mred {
+        line-height: 26px;
+        height: 26px;
+    }
+    &.ui-button-sred {
+        line-height: 22px;
+        height: 22px;
+    }
+}

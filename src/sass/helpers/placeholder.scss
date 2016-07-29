@@ -1,0 +1,88 @@
+@import "helpers/variables";
+@import "helpers/mixin";
+
+// 清除浮动
+%clear {
+    &:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+// 图片水平垂直居中
+%img-center{
+    
+    text-align: center;
+    
+    &:after {
+        content: " ";
+        height: 100%;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    &:after,
+    img {
+        display: inline-block;
+        vertical-align: middle;    
+    }
+
+}
+
+// 水平居中
+%horizontal-center {
+    @include horizontal-center;
+}
+
+// 文字截断
+%text-ell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 色块
+%block-white {
+    background-color: #fff;
+    color: #666;
+}
+%block-orange {
+    background-color: #ff7800;
+    color: #fff;
+}
+%block-gray-normal {
+    background-color: #b3b3b3;
+    color: #fff;
+}
+%block-gray-dark {
+    background-color: #4d4d4d;
+    color: #fff;
+}
+%block-gray-pale {
+    background-color: #f5f5f5;
+    color: #666;
+}
+%block-blue-normal {
+    background-color: #2995f0;
+    color: #fff;
+}
+
+/* list下划线 */
+%list-border-bottom {
+    >li {
+        border-bottom: 1px solid $border-color-normal; 
+    }
+    >li:last-child {
+        border-bottom: none; 
+    }
+}
+

@@ -1,0 +1,78 @@
+/* alice.input 样式模块 */
+
+.ui-input {
+    padding: 7px 9px;
+    line-height: 18px;
+    border: 1px solid #c1c1c1;
+    color: #595959;
+    font-size: 12px;
+    &:hover {
+        border: 1px #727272 solid;
+        border-top-color: #808080;
+    }
+}
+
+.ui-textarea:hover,
+.ui-input-hover {
+    border: 1px #727272 solid;
+    border-top-color: #808080;
+}
+
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-input-focus {
+    border: 1px #07f solid;
+    box-shadow: 0 0 3px #8cddff;
+    color: #595959;
+}
+
+.ui-textarea {
+    line-height: 15px;
+    border: 1px #9C9C9C solid;
+    padding: 5px 3px 0 4px;
+    overflow: auto;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.ui-input[disabled],
+.ui-textarea[disabled],
+.ui-input:disabled,
+.ui-textarea:disabled {
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+}
+
+.placeholder {
+    color: #ccc;
+}
+
+.ui-input-checkcode {
+    width: 100px;
+    height: 24px;
+    line-height: 28px;
+    margin: 0;
+    padding: 2px 5px;
+}
+
+.ui-form-item-hover {
+    .ui-input,
+    .ui-textarea {
+        border: 1px #727272 solid;
+    }
+}
+
+.ui-form-item-focus {
+    .ui-input,
+    .ui-textarea {
+        border: 1px #07f solid;
+        box-shadow: 0 0 3px #8cddff;
+    }
+    .ui-form-explain {
+        color: #333;
+    }
+}
+
+.ui-form-item-hover .ui-form-explain {
+    color: #333;
+}

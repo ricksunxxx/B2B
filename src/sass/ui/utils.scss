@@ -1,0 +1,468 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+select {
+    height: 34px;
+    padding: 3px 5px 4px;
+    -webkit-appearance: none!important;
+    -moz-appearance: none!important;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    border: 1px solid #c1c1c1;
+    color: #666;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+) 100% center no-repeat #fff;
+}
+select:hover {
+    border-color: #727272;
+}
+textarea {
+    color: #666;
+}
+
+input[disabled], 
+select[disabled], 
+textarea[disabled], 
+input[readonly], 
+select[readonly], 
+textarea[readonly]{
+    cursor: not-allowed;
+    background-color: #eee;
+}
+
+body {
+    min-width: 1200px;
+}
+
+a {
+    color: #666;
+}
+/* 清理浮动 */
+
+.fn-clear {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    zoom: 1;
+    /* for IE6 IE7 */
+}
+
+
+/* 隐藏, 通常用来与 JS 配合 */
+
+body .fn-hide {
+    display: none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+
+.fn-left,
+.fn-right,
+.ui-left,
+.ui-right {
+    display: inline;
+}
+
+.fn-left,
+.ui-left {
+    float: left;
+}
+
+.fn-right,
+.ui-right {
+    float: right;
+}
+
+
+/* 单行文字溢出时出现省略号，需设定宽度 */
+
+.fn-text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 简单的渐变 */
+
+.fn-linear {
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f1f1f1');
+    background: linear-gradient(to bottom, #fcfcfc, #f1f1f1);
+}
+
+
+/* 浅色的渐变 */
+
+.fn-linear-light {
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f9f9f9');
+    background: linear-gradient(to bottom, #fcfcfc, #f9f9f9);
+}
+
+
+/* 人民币符号 */
+
+.fn-rmb {
+    font-family: inherit;
+    font-style: normal;
+    // padding-right: 4px;
+}
+
+
+/* chrome 下字体过小的问题 */
+
+.fn-webkit-adjust {
+    -webkit-text-size-adjust: none;
+}
+
+.ui-inlineblock {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+.ui-fixed {
+	position: fixed
+}
+
+.ui-container {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ui-text-center {
+	text-align: center;
+}
+.ui-text-right {
+    text-align: right;
+}
+.ui-vat {
+    vertical-align: top;
+}
+
+.ui-page-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.ui-page-body {
+	min-height: 600px;
+}
+
+.ui-hr {
+	border-bottom: 1px solid #ddd;
+}
+.ui-hr-dashed {
+	border-bottom: 1px dashed #ddd;
+}
+
+.ui-padding-none {
+	padding: 0!important;
+}
+
+.ui-text-normal {
+	color: $text-color-normal;
+}
+.ui-text-dark {
+	color: $text-color-dark;
+}
+.ui-text-pale {
+	color: $text-color-pale;
+}
+.ui-text-highlight {
+	color: $text-color-highlight;
+}
+.ui-text-link {
+	color: $text-color-link;
+}
+.ui-text-warning {
+	color: $text-color-warning;
+}
+.ui-text-success {
+	color: $text-color-success;
+}
+.ui-text-error {
+    color: red;
+}
+
+.ui-font-strong {
+    font-size: 18px;
+    font-weight: normal;
+    color: #666;
+}
+
+.ui-mt20 {
+    margin-top: 20px;
+}
+.ui-pt10 {
+    padding-top: 10px;
+}
+.ui-pt20 {
+    padding-top: 20px;
+}
+.ui-pr20 {
+    padding-right: 20px;
+}
+.ui-pl20 {
+    padding-left: 20px;
+}
+.ui-pt40 {
+    padding-top: 40px;
+}
+.ui-pbt10 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ui-fs12 {
+    font-size: 12px;
+}
+.ui-fs14 {
+    font-size: 14px;
+}
+.ui-fs16 {
+    font-size: 16px;
+}
+.ui-fs18 {
+    font-size: 18px;
+}
+
+.ui-title-xl {
+    font-size: 30px;
+    color: $text-color-dark;
+}
+.ui-title-lg {
+    font-size: 22px;
+    color: $text-color-dark;
+}
+.ui-title-md {
+    font-size: 18px;
+    color: $text-color-dark;
+}
+.ui-title-normal {
+    font-size: 16px;
+    color: $text-color-dark;
+}
+.ui-title-xs {
+    font-size: 14px;
+    color: $text-color-dark;
+}
+
+.ui-content-padding {
+    padding: 10px;
+}
+
+.ui-dl-horizonta,
+.ui-dl-horizontal {
+    padding-left: 120px;
+
+    >dt,
+    >dd {
+        float: left;
+    }
+
+    >dt {
+        margin-left: -120px;
+    }
+
+    &:after {
+        clear: both;
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+.ui-code-img {
+	width: 70px;
+	height: 34px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.iconfont {
+	padding-right: 5px;
+}
+
+.ui-border {
+    border: 1px solid #ddd;
+}
+.ui-border-t {
+    border-top: 1px solid #ddd;
+}
+.ui-border-b {
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-input-calendar {
+    position: relative;
+    display: inline-block;
+    
+    &:after {
+        font-family: "iconfont";
+        position: absolute;
+        top: 5px;
+        right: 6px;
+        content: "\e611";
+        font-size: 15px;
+        color: #666;
+    }
+
+    &:hover {
+        &:after {
+            color: #727272;
+        }
+    }
+
+    input {
+        background: #fff;
+        cursor: pointer;
+    }
+}
+
+.ui-title-nav {
+    li {
+        float: left;
+        padding: 0 8px;
+        line-height: 12px;
+        border-right: 1px solid #ddd;
+
+        &:last-child {
+            border: none;
+        }
+
+        a {
+            color: $text-color-link;
+        }
+    }
+}
+
+.ui-table-list {
+    border: none!important;
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+    tbody {
+        td {
+            padding: 20px;
+        }
+    }
+    tfoot {
+        tr {
+            border: none;
+        }
+    }
+}
+.ui-elli-list {
+    >li {
+        width: 100%;
+        @extend %text-ell;
+    }
+}
+.ui-more {
+    position: relative;
+    padding-right: 16px;
+    
+    &:after {
+        position: absolute;
+        font-family: "iconfont";
+        content: "\e632";
+        font-size: 12px;
+        margin-top: 1px;
+    }
+}
+.ui-thumb {
+    display: table;
+    text-align: center;
+
+    .ui-thumb-inner {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+img.lazy {
+    min-width: 10px;
+    min-height: 10px;
+}
+
+.ui-dropdown-head {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    padding: 7px 24px 7px 9px;
+    background: #fff;
+    cursor: pointer;
+    line-height: 18px;
+    border: 1px solid #c1c1c1;
+    color: $text-color-pale;
+    font-size: 12px;
+
+    &:after {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        content: '\e61f';
+        font-family: "iconfont";
+        color: #c1c1c1;
+    }
+
+    &:hover {
+        border-color: #727272;
+
+        &:after {
+            color: #727272;
+        }
+    }
+
+    &.in {
+        color: $text-color-normal;
+    }
+}
+
+.ui-dialog-form {
+    .ui-form-item {
+        padding-left: 120px;
+        .ui-label {
+            width: 120px;
+            margin-left: -120px;
+        }
+    }
+
+    .ui-select {
+        min-width: 120px;
+    }
+    
+    .ui-input {
+        width: 280px;
+    }
+    textarea {
+        min-width: 280px;
+        min-height: 80px;
+    }
+}
+
+.ui-confirmbox-message {
+    padding-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+// 七牛上传moxie-shim
+.ltie10 {
+    .moxie-shim {
+        z-index: 9;
+    }    
+}

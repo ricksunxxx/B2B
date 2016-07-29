@@ -1,0 +1,652 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.member-order {
+	.ui-form-item.time {
+		.ui-select {
+			width: 120px;	
+		}
+	}
+	select.category {
+		width: 146px;
+	}
+	.supplier-select {
+		position: relative;
+		z-index: 9;
+		width: 270px;
+
+		.ui-dropdown-head {
+			width: 234px;
+			height: 26px;
+			padding-top: 3px;
+			padding-bottom: 3px;
+			.read-text {
+				display: inline-block;
+				width: 216px;
+				line-height: 26px;
+			    white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			   	&.selected {
+					color: #666;
+				}				
+			}
+			&:after {
+				top: 5px;
+				right: 5px;
+			}
+		}
+	}
+	.supplier-panel {
+		display: none;
+		position: absolute;
+		top: 0!important;
+		width: 257px;
+		padding: 0 5px 5px;
+	    border: 1px solid #c1c1c1;
+	    background: #fff;
+	    .ui-dropdown-head {
+	    	padding-left: 4px;
+			border: none;
+	    }
+	}
+	.supplier-search {
+		position: relative;
+
+	    .ui-input {
+			width: 222px;
+    		padding-right: 24px;
+	    }
+	    label {
+	    	position: absolute;
+		    right: 0;
+		    top: 5px;
+		    color: #666;
+	    }		
+	}
+	.supplier-list {
+		max-height: 260px;
+	    margin-right: -5px;
+	    padding: 5px 5px 5px 0;
+	    overflow: auto;
+	    >li {
+	    	padding: 0 5px;
+		    line-height: 28px;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    cursor: pointer;
+		    &:hover {
+		    	background: #efefef;
+		    }
+	    }
+	}
+	.supplier-clear {
+		display: none;
+		position: absolute;
+	    top: 11px;
+	    right: 23px;
+	    border-right: 1px solid #ddd;
+	    line-height: 12px;
+	    font-size: 12px;
+	    color: #999;
+	    cursor: pointer;
+	    &:hover {
+	    	color: red;
+	    }	
+	}
+}
+
+.member-table-order {
+	color: #666;
+
+	.w270 {
+		width: 270px;
+	}
+
+	.w160 {
+		width: 160px;
+	}
+
+	.w170 {
+		width: 170px;
+	}
+
+	.w118 {
+		width: 118px;
+	}
+
+	.w110 {
+		width: 110px;
+	}
+
+	.w100 {
+		width: 100px;
+	}
+
+	.w80 {
+		// width: 80px;
+		width: 90px;
+	}
+	.w90 {
+		width: 90px;
+	}
+	.w120 {
+		width: 120px;
+	}
+
+	.w140 {
+		width: 140px;
+	}
+
+	.ui-panel {
+		width: 250px;
+		margin-left: 10px;
+
+		.ui-panel-text-inner {
+			height: 64px;
+    		margin-top: 2px;
+    		a {
+    			color: #666!important;
+    		}
+		}
+	}
+	.table-head {
+		height: 32px;
+		background: #fbfbfb;
+		border-bottom: 1px solid #d9d9d9;
+		overflow: hidden;
+
+		.table-head-nav {
+			width: 105%;
+		}
+
+		li {
+			float: left;
+			line-height: 32px;
+			text-align: center;
+			color: $text-color-dark;
+		}
+	}
+
+	.table-group-hd {
+		height: 32px;
+		padding: 0 10px;
+		margin-top: -1px;
+		line-height: 32px;
+		background: #efefef;
+		border-top: 1px solid #ddd;
+
+		.item {
+			display: inline-block;
+			margin-right: 20px;
+
+			&.price {
+				float: right;
+				margin: 0;
+			}
+			&.stoped {
+				min-height: 32px;
+    			vertical-align: top;
+				background-position: 0 -23px;
+			}
+			&.auto2hand {
+				min-height: 32px;
+    			vertical-align: top;
+				background-position: -50px -21px;
+			}
+			&.processing {
+				background-position: 0 10px;
+			}
+			&.handle {
+				min-height: 32px;
+    			vertical-align: top;
+				background-position: -24px -21px;
+			}
+		}
+
+		.highlight {
+			font-size: 14px;
+			color: $text-color-highlight;
+		}
+	}
+
+	.table-group-bd {
+		position: relative;
+
+		.colspan {
+			float: left;
+			display: table;
+			height: 66px;
+			padding: 15px 0;
+		}
+		.colspan-inner {
+			display: table-cell;
+			// padding-left: 10px;
+			vertical-align: middle;
+			text-align: center;
+
+			a {
+				color: $text-color-link;
+			}
+		}
+
+		.ui-panel-mini {
+			height: 66px;
+			overflow: hidden;
+		}
+
+		.status {
+			position: absolute;
+			right: 0;
+			top: 1px;
+			bottom: 1px;
+			height: auto;
+			background: #fff;
+			border-left: 1px solid #ddd;
+			
+			.colspan {
+				width: 100%;
+				height: 100%;
+				padding: 0;
+			}
+		}
+
+
+	}
+
+	.table-group-item {
+		border-top: 1px solid #ddd;
+		@extend %clear;
+	}
+}
+
+.order-clear-dialog {
+	.ui-select {
+		width: 200px;
+	}
+}
+.order-exportleds-dialog {
+	.ui-label {
+		width: 50px;
+		margin-left: -50px;
+	}
+	.ui-form-item {
+		padding-left: 50px;
+		padding-bottom: 10px;
+	}
+	.ui-form-text {
+		display: inline-block;
+		margin-top: 5px;
+		font-size: 14px;
+	}
+}
+.order-price-dialog {
+	.ui-form-item {
+		display: inline-block;
+		width: 164px;
+    	padding-left: 80px;
+    	.ui-label {
+    		width: 80px;
+		    margin-left: -80px;
+		    color: #999;
+    	}
+	}
+	.ui-panel-thumb {
+		.tag {
+			position: absolute;
+			right: 1px;
+			top: 1px;
+			width: 18px;
+			height: 18px;
+			padding: 0;
+			line-height:18px;
+			font-size: 16px;
+			color: red;
+			cursor: pointer;
+		}
+	}
+	.ui-panel-text-inner {
+		height: 62px;
+		margin-left: 68px!important;
+	}
+
+	.ui-table {
+		margin-top: 10px;
+
+		th,td {
+			text-align: center;	
+		}
+		
+		.ui-input {
+			width: 60px;
+			padding: 3px 5px;
+		}
+	}
+	.input-wrap {
+		position: relative;
+		.tips {
+			position: absolute;
+			top: -23px;
+		    width: 100%;
+		    text-align: center;
+		    color: red;
+		}
+	}
+}
+
+.order-exception-dialog {
+
+	.ui-select {
+		width: 200px;
+		margin-top: 0;
+	}
+	.ui-checkbox {
+		margin-right: 4px;
+	}
+	.ui-input {
+		&.uname {
+			width: 270px;
+		}
+	}
+	
+	.check-item {
+		float: left;
+		padding: 7px 20px 0 0;
+
+		&:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.pb0 {
+		padding-bottom: 0;
+	}
+	
+	.head {
+		border-bottom: 1px solid #ddd;
+    	padding-bottom: 10px;
+	}
+	.title {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 32px;
+
+		.time {
+			font-size: 12px;
+			font-weight: normal;
+			color: #999;
+		}
+	}
+	.users-wrap {
+		position: relative;
+		.users-panel {
+			display: none;
+			width: 278px;
+			margin-top: -1px;
+			padding: 0 5px;
+	    	border: 1px solid #c1c1c1;
+	    	background: #fff;
+		}
+		.users-list {
+			max-height: 260px;
+		    margin-right: -5px;
+		    padding: 5px 5px 5px 0;
+		    overflow: auto;			
+		}
+		.users-item {
+			padding: 0 5px;
+		    line-height: 28px;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    cursor: pointer;
+		    &:hover {
+		    	background: #efefef;
+		    }
+		}
+	}
+
+	.historys {
+		.item {
+			position: relative;
+			padding: 5px 0 5px 20px;
+			border-left: 2px solid #ddd;
+
+			&:after {
+				position: absolute;
+				left: -6px;
+				top: 18px;
+				width: 4px;
+				height: 4px;
+				background: #ddd;
+				border: 3px solid #fff;
+				border-radius: 50%;
+				content: " ";
+			}
+		}
+		.infos {
+			// text-align: right;
+			span {
+				padding-right: 10px;
+				color: #999;
+			}
+		}
+		.desc {
+			word-wrap: break-word;
+		}
+	}
+	&.follow {
+		.header {
+			padding: 10px 30px 15px;
+			background: #f5f5f5;
+			margin-bottom: 20px;
+			border: 1px dashed #ddd;
+			max-height: 154px;
+			overflow-y: auto;
+		}
+		.ui-textarea {
+			width: 390px;
+		}
+		.historys {
+			// width: 400px;
+			// max-height: 140px;
+			margin: 10px 0 0 15px;
+		}
+	}
+}
+.except-detail {
+	.ui-dialog-container {
+		max-height: 500px;
+		overflow-y: auto;
+	}
+}
+
+.ui-input {
+	&.md {
+		width: 160px;
+	}
+	&.sm {
+		width: 64px;
+	}
+}
+.ui-input,
+.ui-textarea {
+	&.failed {
+		border-color: red;
+	}
+}
+
+// 订单详情
+.member-order-detail {
+
+	.ui-form-item {
+		display: inline-block;
+		width: 164px;
+		padding-left: 120px;
+
+		.ui-label {
+			width: 120px;
+			margin-left: -120px;
+			color: #999;
+		}
+
+		.ui-form-text {
+			font-size: 14px;
+		}
+	}
+	.ui-form-item.full {
+		width: 100%!important;
+	}
+
+	.detail-section {
+		margin-top: 20px;
+
+		&.col4 {
+			.ui-form-item {
+				width: 80px;
+			}
+		}
+
+		.addr-edit {
+			display: inline-block;
+			margin-left: 5px;			
+			font-size: 14px;
+			color: #0ae;
+		}
+	}
+	.detail-section-hd {
+		border-bottom: 2px solid #ccc;
+
+		.title {
+			line-height: 36px;
+			font-size: 16px;
+		}
+	}
+
+	.detail-section-bd {
+		padding-top: 20px;
+	}
+
+	.ui-table {
+		th,td {
+			text-align: center;	
+		}
+	}
+
+	.ui-panel-text-inner {
+		height: 52px;
+    	overflow: hidden;
+	}
+}
+.md-address-dialog {
+	.ui-form-item {
+		padding-left: 120px;
+	}
+	.ui-label {
+		width: 120px;
+		margin-left: -120px;
+	}
+	.ui-input {
+		width: 300px;
+	}
+	.address-select {
+		display: inline-block;
+		vertical-align: middle;
+
+		.ui-input {
+			float: left;
+			width: 84px;
+			margin: 0 2px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+// 异常订单详情
+.except-box {
+	padding: 10px 30px 0;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+	.except-box-head {
+	    padding-bottom: 10px;
+	    		
+		.title {
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.time {
+			font-size: 14px;
+		}
+		.trigger {
+			position: relative;
+			float: right;
+			width: 22px;
+			height: 22px;
+			margin-left: 40px;
+			cursor: pointer;
+			color: #999;
+			&:hover {
+				color: #333;
+			}
+			&:after {
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-family: "iconfont";
+				content: "\e607";
+				font-size: 16px;
+			}
+			&.close {
+				&:after {
+					content: "\e60d";
+				}
+			}
+		}
+		.desc {
+			font-size: 14px;
+		}
+	}
+    .right {
+    	float: right;
+    	padding: 5px 0 0 0;
+    }
+
+    .except-box-items {
+    	padding: 20px 0 15px 40px;
+    	border-top: 1px solid #ddd;
+    }
+
+    .except-box-item {
+		position: relative;
+		padding: 10px 0 10px 20px;
+		border-left: 2px solid #ddd;
+		font-size: 14px;
+
+		&:after {
+			position: absolute;
+			left: -6px;
+			top: 18px;
+			width: 4px;
+			height: 4px;
+			background: #ddd;
+			border: 3px solid #fff;
+			border-radius: 50%;
+			content: " ";
+		}
+
+		.infos {
+			color: #999;
+		}
+    }
+}
+
+.ui-dialog-operation {
+	.failed {
+		padding-right: 20px;
+		color: red;
+	}
+}

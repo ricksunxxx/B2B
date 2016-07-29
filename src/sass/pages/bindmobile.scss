@@ -1,0 +1,22 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.bindmob {
+	.register-form {
+		width: 800px;
+		padding-top: 50px;
+		margin: 0 auto;
+
+		.ui-button.submit {
+			width: 160px;
+		}
+	}
+	.bmob-tips {
+		margin-bottom: 50px;
+	}
+	.skip {
+		display: inline-block;
+		margin-left: 30px;
+		color: #0ae;
+	}
+}

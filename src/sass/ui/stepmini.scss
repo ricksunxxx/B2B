@@ -1,0 +1,45 @@
+/* alice.stepmini 样式模块 */
+
+.ui-ministep {
+    list-style: none;
+    font-size: 12px;
+    font-family: tahoma;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #b7b7b7;
+}
+
+.ui-ministep-item {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 36px;
+}
+
+.ui-ministep {
+    .iconfont {
+        color: #b7b7b7;
+        font-size: 18px;
+    }
+    .ui-ministep-number {
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        color: #fff;
+        line-height: 12px;
+        font-style: normal;
+    }
+    .ui-ministep-text {
+        position: relative;
+        top: -2px;
+    }
+}
+
+.ui-ministep-active {
+    color: #FF6700;
+    .iconfont {
+        color: #FF6700;
+    }
+}

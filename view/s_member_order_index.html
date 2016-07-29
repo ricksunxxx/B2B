@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>订单管理-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/member.css">
+</head>
+<body>
+    <div class="ui-page-wrap s-member">
+        <div id="J_global_header" class="s-m-header m-header">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/s_logo.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href=""><i class="icon-message iconfont">&#xe617;</i>消息</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="">用户中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe602;</i>我的产品
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品刊登</a>
+                                                </li>                                 
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品管理</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe619;</i>订单管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item active">
+                                                    <a class="link" href="">订单查询</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61d;</i>我的账户
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="s_member_account_management_base.html">个人信息管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">我的消息</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <h3 class="member-head-title">订单查询</h3>
+                                </div>
+                                <div class="member-order member-main-inner ui-content-padding">
+                                    <form action="" id="J_form_query" class="member-form-col3 ui-form">
+                                        <div class="member-form-query">
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="order_code">订单编号：</label>
+                                                <input class="ui-input" type="text" id="order_code">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="order_storage_code">第三方订单号：</label>
+                                                <input class="ui-input" type="text" id="order_storage_code">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="product_code">商品编号：</label>
+                                                <input class="ui-input" type="text" id="product_code">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="product_name">商品名称：</label>
+                                                <input class="ui-input" type="text" id="product_name">
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">商品分类：</label>
+                                                <select name="" id="" class="category">
+                                                    <option value="">全部</option>
+                                                    <option value="">母婴</option>
+                                                </select>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label" for="user_name">收货人：</label>
+                                                <input class="ui-input" type="text" id="user_name">
+                                            </div>
+                                            <div class="ui-form-item auto time">
+                                                <label class="ui-label">时间：</label>
+                                                <select name="" class="ui-select" id="query_time">
+                                                    <option value="1">付款时间</option>
+                                                    <option value="1">创建时间</option>
+                                                </select>
+                                                <span class="ui-input-calendar"><input type="text" id="J_date_start" class="ui-input" value="" readonly="readonly" placeholder="开始时间"></span>&nbsp;-
+                                                <span class="ui-input-calendar"><input type="text" id="J_date_end" class="ui-input" value="" readonly="readonly" placeholder="结束时间"></span>
+                                            </div>
+                                            <div class="ui-form-item">
+                                                <label class="ui-label">供应商：</label>
+                                                <div class="">
+                                                    <div class="supplier-select" id="supplier">
+                                                        <span class="ui-dropdown-head" id="pop_trigger">
+                                                            <em class="read-text">选择供应商</em>
+                                                        </span>
+                                                        <div class="supplier-panel" id="supplier_panel">
+                                                            <span class="ui-dropdown-head">
+                                                                <em class="read-text">选择供应商</em>
+                                                            </span>
+                                                            <div class="supplier-search">
+                                                                <label for="supplier_query"><i class="iconfont">&#xe62b;</i></label>
+                                                                <input type="text" class="ui-input" id="supplier_query" placeholder="搜索">
+                                                            </div>
+                                                            <ul class="supplier-list" id="supplier_list"></ul>  
+                                                        </div>
+                                                        <span class="supplier-clear iconfont" id="">&#xe629;</span>
+                                                        <input type="hidden" id="supplier_id" name="VendorId">
+                                                    </div>    
+                                                </div>
+                                            </div>
+                                            <p class="member-form-query-btns">
+                                                <button id="J_submit_query" class="submit ui-button-lgreen ui-button">查询</button>
+                                                <button id="J_submit_out" class="submit ui-button-lblue ui-button">导出</button> 
+                                            </p>
+                                        </div>
+                                        <div class="member-tabs-order member-tabs ui-tabs">
+                                            <div class="member-tabs-hd fn-clear">
+                                                <ul class="ui-tabs-triggers fn-left">
+                                                    <li class="ui-tabs-trigger ui-tabs-active">
+                                                        <a href="javascript:;" data-type="0">全部</a>
+                                                    </li>
+                                                    <li class="ui-tabs-trigger">
+                                                        <a href="javascript:;" data-type="1">待付款</a>
+                                                    </li>
+                                                    <li class="ui-tabs-trigger">
+                                                        <a href="javascript:;" data-type="2">已付款</a>
+                                                    </li>
+                                                    <li class="ui-tabs-trigger">
+                                                        <a href="javascript:;" data-type="3">已处理中</a>
+                                                    </li>
+                                                    <li class="ui-tabs-trigger">
+                                                        <a href="javascript:;" data-type="4">已出货</a>
+                                                    </li>
+                                                    <li class="ui-tabs-trigger">
+                                                        <a href="javascript:;" data-type="5">已取消</a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="member-tabs-hd-right fn-clear">
+<!--                                                     <li>
+                                                        <div class="supplier-select" id="supplier">
+                                                            <span class="ui-dropdown-head" id="pop_trigger">
+                                                                <em class="read-text">选择供应商</em>
+                                                            </span>
+                                                            <div class="supplier-panel" id="supplier_panel">
+                                                                <span class="ui-dropdown-head">
+                                                                    <em class="read-text">选择供应商</em>
+                                                                </span>
+                                                                <div class="supplier-search">
+                                                                    <label for="supplier_query"><i class="iconfont">&#xe62b;</i></label>
+                                                                    <input type="text" class="ui-input" id="supplier_query" placeholder="搜索">
+                                                                </div>
+                                                                <ul class="supplier-list" id="supplier_list"></ul>  
+                                                            </div>
+                                                            <span class="supplier-clear iconfont" id="">&#xe629;</span>
+                                                            <input type="hidden" id="supplier_id" name="VendorId">
+                                                        </div>
+                                                    </li> -->
+                                                    <li>
+                                                        <button id="J_up_batch" class="btn-batch-up ui-button-sorange ui-button">批量出库</button>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                            <div class="member-tabs-bd ui-tabs-content">
+                                                <div class="member-table-order member-table ui-table-inbox ui-tabs-panel">
+                                                    <div class="table-head">
+                                                        <ul class="table-head-nav">
+                                                            <li class="w270">商品名称</li>
+                                                            <li class="w160">商品编号</li>
+                                                            <li class="w80">数量</li>
+                                                            <li class="w160">是否预定</li>
+                                                            <li class="w118">申报价(RMB)</li>
+                                                            <li class="w120">状态/操作</li>
+                                                        </ul>             
+                                                    </div>
+
+                                                    <!--<div class="member-table-none">无相关信息</div>-->
+                                                    
+                                                    <div class="table-group" data-info="SO9320616031100013">
+                                                        <div class="table-group-hd">
+                                                            <span class="price item">订单总金额：<em class="highlight">￥344.23</em></span>
+                                                            <span class="item">
+                                                                <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                            </span>
+                                                            <span class="item">2016-01-01 12:25</span>
+                                                            <span class="item">订单编号：SO9320616031100013</span>
+                                                            <span class="item auto2hand" title="半系统半手工"></span>
+                                                            <span class="item stoped" title="系统订单"></span>
+                                                            <span class="item handle" title="手工订单"></span>
+                                                        </div>
+                                                        <div class="table-group-bd">
+                                                            <div class="table-group-item fn-clear">
+                                                                <div class="colspan w270">
+                                                                    <div class="colspan-inner">
+                                                                        <div class="ui-panel-mini ui-panel">
+                                                                            <div class="ui-panel-thumb">
+                                                                                <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                    <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                </a>    
+                                                                            </div>
+                                                                            <div class="ui-panel-text">
+                                                                                <div class="ui-panel-text-inner">
+                                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                        Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                                    </a>    
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>     
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        953001-P-136205    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w80">
+                                                                    <div class="colspan-inner">x1</div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        来自锁库<br>
+                                                                        BO9355815070800001    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w118">
+                                                                    <div class="colspan-inner">89.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="status w120">
+                                                                <div class="colspan">
+                                                                    <div class="colspan-inner">
+                                                                        <span class="processing">处理中</span><br>
+                                                                        <span>待付款</span><br>
+                                                                        <a href="#">订单详情</a>
+                                                                        <a href="javascript:;" class="J_exception">设置异常</a>
+                                                                        <a href="javascript:;" class="J_fl_exception">跟踪异常</a>
+                                                                        <a href="javascript:;" class="J_dt_exception">异常详情</a>
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-group" data-info="SO9320616031100013">
+                                                        <div class="table-group-hd">
+                                                            <span class="price item">订单总金额：<em class="highlight">￥344.23</em></span>
+                                                            <span class="item">
+                                                                <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                            </span>
+                                                            <span class="item">2016-01-01 12:25</span>
+                                                            <span class="item">订单编号：SO9320616031100013</span>
+                                                            <span class="item">收货人：欧阳小龙女</span>
+                                                            <span class="item">发货地：韩国直邮</span>
+                                                            <span class="item auto2hand" title="半系统半手工"></span>
+                                                            <span class="item stoped" title="系统订单" style="display:none;"></span>
+                                                            <span class="item">推送失败(原因)</span>
+                                                        </div>
+                                                        <div class="table-group-bd">
+                                                            <div class="table-group-item fn-clear">
+                                                                <div class="colspan w270">
+                                                                    <div class="colspan-inner">
+                                                                        <div class="ui-panel-mini ui-panel">
+                                                                            <div class="ui-panel-thumb">
+                                                                                <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                    <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                </a>    
+                                                                            </div>
+                                                                            <div class="ui-panel-text">
+                                                                                <div class="ui-panel-text-inner">
+                                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                        Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                                    </a>    
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>     
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        953001-P-136205    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w80">
+                                                                    <div class="colspan-inner">x1</div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        来自锁库<br>
+                                                                        BO9355815070800001    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w118">
+                                                                    <div class="colspan-inner">89.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table-group-item fn-clear">
+                                                                <div class="colspan w270">
+                                                                    <div class="colspan-inner">
+                                                                        <div class="ui-panel-mini ui-panel">
+                                                                            <div class="ui-panel-thumb">
+                                                                                <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                    <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                </a>    
+                                                                            </div>
+                                                                            <div class="ui-panel-text">
+                                                                                <div class="ui-panel-text-inner">
+                                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                        Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                                    </a>    
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>     
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        953001-P-136205    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w80">
+                                                                    <div class="colspan-inner">x1</div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        来自锁库<br>
+                                                                        BO9355815070800001    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w118">
+                                                                    <div class="colspan-inner">89.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table-group-item fn-clear">
+                                                                <div class="colspan w270">
+                                                                    <div class="colspan-inner">
+                                                                        <div class="ui-panel-mini ui-panel">
+                                                                            <div class="ui-panel-thumb">
+                                                                                <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                    <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                </a>    
+                                                                            </div>
+                                                                            <div class="ui-panel-text">
+                                                                                <div class="ui-panel-text-inner">
+                                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                                        Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                                    </a>    
+                                                                                </div>
+                                                                            </div>    
+                                                                        </div>     
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        953001-P-136205    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w80">
+                                                                    <div class="colspan-inner">x1</div>
+                                                                </div>
+                                                                <div class="colspan w160">
+                                                                    <div class="colspan-inner">
+                                                                        来自锁库<br>
+                                                                        BO9355815070800001    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="colspan w118">
+                                                                    <div class="colspan-inner">89.00</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="status w120">
+                                                                <div class="colspan">
+                                                                    <div class="colspan-inner">
+                                                                        <!-- 状态 -->
+                                                                        <span>待付款</span><br>
+                                                                        <!-- 操作 -->
+                                                                        <a href="javascript:;" class="J_change_price">订单改价</a><br>
+                                                                        <a href="javascript:;" class="J_change_address">地址修改</a><br>
+                                                                        <a href="javascript:;" class="J_create_do">生成DO</a><br>
+                                                                        <a href="javascript:;" class="J_order_clear">取消订单</a><br>
+                                                                        <a href="javascript:;" class="J_shipment">操作出货</a><br>
+                                                                        <a href="javascript:;" class="J_logistics">维护物流信息</a><br>
+                                                                        <a href="javascript:;" class="J_cleartip" data-tip="不喜欢">取消原因</a><br>
+                                                                        <!-- 链接 -->
+                                                                        <a href="#">订单详情</a>
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                        <div class="ui-paging member-paging" data-current="1" data-total="24">
+                                            <a href="#" class="ui-paging-prev">
+                                                <i class="iconfont" title="左箭头">&#xe62c;</i> 上一页
+                                            </a>
+                                            <a href="#" class="ui-paging-item">1</a>
+                                            <a href="#" class="ui-paging-item ui-paging-current">2</a>
+                                            <a href="#" class="ui-paging-item">3</a>
+                                            <a href="#" class="ui-paging-item">4</a>
+                                            <a href="#" class="ui-paging-item">5</a>
+                                            <a href="#" class="ui-paging-item">6</a>
+                                            <a href="#" class="ui-paging-item">7</a>
+                                            <span class="ui-paging-ellipsis">...</span>
+                                            <a href="#" class="ui-paging-item">24</a>
+                                            <a href="#" class="ui-paging-next">
+                                                下一页 <i class="iconfont" title="右箭头">&#xe632;</i>
+                                            </a>
+                                            <span class="ui-paging-info"><span class="ui-paging-bold">5/7</span>页</span>
+                                            <span class="ui-paging-which"><input name="some_name" value="6" type="text"></span>
+                                            <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                        </div>
+                                        <input type="hidden" name="" id="J_query_type">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-m-footer">
+            <div class="s-m-footer-inner ui-container">
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var AbnormalTypes = [];
+        var AbnormalUsers = [{TrueName: '罗豪鑫'}];
+    </script>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/member.js"></script>
+    <script src="../dist/js/s_order.js"></script>
+    <script>window.sorder && sorder.index();</script>
+</body>
+</html>

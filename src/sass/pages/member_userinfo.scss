@@ -1,0 +1,85 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+/* 会员中心首页 */
+.member-userinfo {
+	padding: 40px 0 60px;
+
+	.member-userinfo-left,
+	.member-userinfo-right {
+		float: left;
+	}
+	.member-userinfo-left {
+		width: 200px;
+		margin-left: 100px;
+	}
+	.member-userinfo-right {
+		width: 620px;
+	}
+	.member-userinfo-list {
+		width: 300px;
+		font-size: 14px;
+
+		li {
+			padding: 5px 0;
+		}
+
+		.name,
+		.mony {
+			font-size: 18px;
+		}
+	}
+
+	.avatar {
+		width: 100px;
+		height: 100px;
+		margin-top: 5px;
+		overflow: hidden;
+		border-radius: 50%;
+		border: 1px solid #ddd;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+// 推荐商品
+.member-userinfo-recom {
+	width: 100%;
+	overflow: hidden;
+
+	.goods-list {
+		width: 105%;
+
+		>li {
+			position: relative;
+			float: left;
+			width: 160px;
+			margin-left: -1px;
+			margin-bottom: 10px;
+			border: 2px solid #fff;
+			&:hover {
+				border-color: red;
+				z-index: 3;
+			}
+		}
+		.m-goods {
+			overflow: hidden;
+		}
+		.m-goods-thumb {
+			margin-top: 2px;
+		}
+		.m-goods-thumb,
+		.m-goods-thumb-img {
+			width: 156px;
+			height: 156px;
+		}
+		.m-goods-name {
+			height: 38px;
+			a:hover {
+				color: $text-color-highlight;
+			}
+		}
+	}
+}

@@ -1,0 +1,146 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.tag.iconfont {
+	font-size: 30px;
+	color: red;
+	line-height: 22px;
+}
+.tag-off {
+	padding: 2px 3px;
+	line-height: 18px;
+	background: #efefef;
+	border: 1px solid #ccc;
+}
+.shopping-head-title {
+	.iconfont {
+		font-size: 20px;
+		color: #666;
+	}
+}
+.shopping-table {
+	margin-top: 10px;
+	
+	.ui-table {
+		border-top-width: 2px;
+	    border-top-color: $border-color-dark;
+	}
+
+	th,
+	td {
+		text-align: center;
+	}
+
+    tbody {
+    	tr:hover,
+    	tr.selected {
+			background: #fffbf3;
+    	}
+    }
+
+    .ui-checkbox {
+    	vertical-align: top;
+    	margin: 3px 3px 0 0;
+    }
+
+    .props {
+    	width: 150px;
+    	min-height: 62px;
+    	text-align: left;
+    	color: #999;
+    }
+
+    .ui-panel-mini {
+		width: 314px;
+	}
+}
+.shopping-step {
+	width: 900px;
+	margin: $space-lg auto;
+}
+
+.cart-body {
+	padding-bottom: 40px;
+}
+
+.cart-empty {
+	width: 300px;
+	margin: 80px auto 200px;
+	text-align: center;
+	.iconfont {
+		font-size: 180px;
+		color: #999;
+	}
+	.text {
+		font-size: $font-size-lg;
+	}
+	.link {
+		color: $text-color-link;
+	}
+}
+.cart-counter {
+	margin: 0 auto;
+	.tips {
+		bottom: 34px;
+	}
+}
+.cart-controlbar {
+	margin-top: 20px;
+	background: $bg-color-pale;
+	border: 1px solid $border-color-normal;
+
+	.cart-controlbar-item {
+		display: inline-block;
+		margin-right: 10px;
+		padding-top: 4px;
+		line-height: 22px;
+		vertical-align: middle;
+		.ui-checkbox {
+			vertical-align: baseline;
+		}
+	}
+
+	.fn-right {
+		.cart-controlbar-item {
+			margin-right: 20px;
+		}
+	}
+	
+	.highlight {
+		padding: 0 3px;
+		color: $text-color-highlight;
+		font-weight: bold;
+	}
+	.fn-rmb {
+		font-size: 14px;
+		padding: 0;
+	}
+	.total {
+		padding: 0;
+		font-size: $font-size-xl;
+		font-weight: 500;
+	}
+	
+	.remove-batch {
+		cursor: pointer;
+		.iconfont {
+			font-size: 15px;
+		}
+		&:hover {
+			color: red;
+		}
+	}
+
+	.cart-controlbar-price {
+		padding-top: 2px;
+	}
+}
+
+.ui-poptip {
+	position: absolute;
+	display: none;
+	width: 132px;
+	.ui-poptip-arrow-7 {
+		left: 56px;
+	}
+}

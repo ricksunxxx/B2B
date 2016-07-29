@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>我的消息-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/member.css">
+</head>
+<body>
+    <div class="ui-page-wrap s-member">
+        <div id="J_global_header" class="s-m-header m-header">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/s_logo.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href=""><i class="icon-message iconfont">&#xe617;</i>消息</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="">用户中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe602;</i>我的产品
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品刊登</a>
+                                                </li>                                 
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品管理</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe619;</i>订单管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">订单查询</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61d;</i>我的账户
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="s_member_account_management_base.html">个人信息管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item active">
+                                                    <a class="link" href="">我的消息</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <h3 class="member-head-title">我的消息</h3>
+                                </div>
+                                <div class="member-main-inner">
+                                    <form action="" id="J_form_message">
+                                        <div class="member-message" id="J_member_message">
+                                            <div class="member-message-hd fn-clear">
+                                                <div class="fn-left">
+                                                    <span class="checkbox-wrap">
+                                                        <input type="checkbox" class="ui-checkbox" id="J_checkall">
+                                                        <label for="J_checkall">全选</label>
+                                                    </span>
+                                                    共有<span id="J_message_count">100</span>条信息，其中(<em class="ui-text-highlight" id="J_unread_num">5</em>)条未读
+                                                </div>
+                                                <div class="fn-right">
+                                                    <a class="batchdel ui-button-swhite ui-button" id="J_del_batch">删除所选</a>
+                                                </div>
+                                            </div>
+                                            <div class="member-message-bd">
+                                                <ul class="member-message-list" id="J_message_list">
+                                                    <!-- 无信息时
+                                                    <li class="null member-message-item">无相关信息</li>-->
+                                                    <li class="member-message-item unread" data-id="120">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item unread" data-id="121">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item unread" data-id="122">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item unread" data-id="123">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item unread" data-id="124">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="125">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="126">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="127">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="128">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="129">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="130">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="131">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="132">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="133">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="member-message-item" data-id="134">
+                                                        <span class="checkbox block">
+                                                            <input type="checkbox" class="checkbox-sub ui-checkbox">
+                                                        </span>
+                                                        <span class="title block">产品下架提醒[消息]</span>
+                                                        <span class="time block">2016-04-06 14:40</span>
+                                                        <span class="read block">展开</span>
+                                                        <span class="remove block">删除</span>
+                                                        <div class="content">
+                                                            <p>尊敬的客户</p>
+                                                            <p>您好！产品<strong>953003-P-120307</strong>已经下架，请及时更改您销售平台上架的产品信息</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="ui-paging member-paging" data-current="1" data-total="24">
+                                                    <a href="#" class="ui-paging-prev">
+                                                        <i class="iconfont" title="左箭头">&#xe62c;</i> 上一页
+                                                    </a>
+                                                    <a href="#" class="ui-paging-item">1</a>
+                                                    <a href="#" class="ui-paging-item ui-paging-current">2</a>
+                                                    <a href="#" class="ui-paging-item">3</a>
+                                                    <a href="#" class="ui-paging-item">4</a>
+                                                    <a href="#" class="ui-paging-item">5</a>
+                                                    <a href="#" class="ui-paging-item">6</a>
+                                                    <a href="#" class="ui-paging-item">7</a>
+                                                    <span class="ui-paging-ellipsis">...</span>
+                                                    <a href="#" class="ui-paging-item">24</a>
+                                                    <a href="#" class="ui-paging-next">
+                                                        下一页 <i class="iconfont" title="右箭头">&#xe632;</i>
+                                                    </a>
+                                                    <span class="ui-paging-info"><span class="ui-paging-bold">5/7</span>页</span>
+                                                    <span class="ui-paging-which"><input name="some_name" value="6" type="text"></span>
+                                                    <a class="ui-paging-info ui-paging-goto" href="#">跳转</a>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="s-m-footer">
+            <div class="s-m-footer-inner ui-container">
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/member.js"></script>
+    <script src="../dist/js/s_account.js"></script>
+    <script>window.account && window.account.message();</script>
+</body>
+</html>

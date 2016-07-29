@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>注册-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/passport.css">
+</head>
+<body>
+    <div class="ui-page-wrap s-register">
+        <div id="J_global_header" class="s-m-header m-header">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/s_logo.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body">
+            <div class="passport-wrap register-step1">
+                <div class="ui-container">
+                    <div class="passport-main">
+                        <div class="passport-step">
+                            <ol class="ui-step ui-step-3">
+                                <li class="ui-step-start ui-step-active">
+                                    <div class="ui-step-line">-</div>
+                                    <div class="ui-step-icon">
+                                        <i class="iconfont">&#xe60b;</i>
+                                        <i class="ui-step-number">1</i>
+                                        <span class="ui-step-text">填写会员信息</span>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="ui-step-line">-</div>
+                                    <div class="ui-step-icon">
+                                        <i class="iconfont">&#xe60b;</i>
+                                        <i class="ui-step-number">2</i>
+                                        <span class="ui-step-text">绑定手机</span>
+                                    </div>
+                                </li>
+                                <li class="ui-step-end">
+                                    <div class="ui-step-line">-</div>
+                                    <div class="ui-step-icon">
+                                        <i class="iconfont">&#xe60b;</i>
+                                        <i class="iconfont ui-step-number">&#xe616;</i>
+                                        <span class="ui-step-text">注册成功</span>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="register-statement">
+                            <div class="register-statement-inner">
+                                <dl>
+                                    <dt>供应商申请条件</dt>
+                                    <dd>1、商品符合国内客户流行趋势以及审美要求。</dd>
+                                    <dd>2、款式时尚、设计精美，紧跟国际时尚品味。</dd>
+                                    <dd>3、能提供高质量的产品图片和具有竞争力的价格。</dd>
+                                    <dd>4、具有一定规模且设施较为完善的供应商。</dd>
+                                    <dd>5、对中国市场有一定了解，且对未来电子商务行业充满信心 。</dd>
+                                </dl>
+                                <i class="iconfont">&#xe614;</i>
+                            </div>
+                        </div>
+                        <div class="register-form">
+                            <form id="J_register_form_step1" class="ui-form" action="">
+                                <div class="register-form-row">
+                                    <h3 class="title">您的账户信息</h3>
+                                    <div class="ui-form-item">
+                                        <label for="username" class="ui-label" >用户名：</label>
+                                        <input type="text" class="ui-input" id="username">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">以英文字母开头，4-20个字母或数字、下划线，不能用中文，注册成功后不可修改</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="nickname" class="ui-label" >供应商昵称：</label>
+                                        <input type="text" class="ui-input" id="nickname">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_password" class="ui-label" >密码：</label>
+                                        <input type="password" class="ui-input" id="user_password">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">由6-20个字母(区分大小写)或数字组成。</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_password_confirm" class="ui-label" >确认密码：</label>
+                                        <input type="password" class="ui-input" id="user_password_confirm">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">请再输入一遍上面填写的密码。</span>
+                                    </div>
+                                </div>
+                                <div class="register-form-row">
+                                    <h3 class="title">姓名和联系方式</h3>
+                                    <div class="ui-form-item">
+                                        <label for="truename" class="ui-label" >真实姓名：</label>
+                                        <input type="text" name="name" class="ui-input" id="truename">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="" class="ui-label" >性别：</label>
+                                        <span>
+                                            <input type="radio" name="sex" class="ui-radio" id="sex_g" value="1" checked="checked">
+                                            <label class="label" for="sex_g">女</label>  
+                                            <input type="radio" name="sex" class="ui-radio" id="sex_b" value="2">
+                                            <label class="label" for="sex_b">男</label>  
+                                        </span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label class="ui-label" >您的职位：</label>
+                                        <select name="" id="user_job" class="">
+                                            <option value="GMG">总经理</option>
+                                            <option value="VGM">副总经理</option>
+                                            <option value="DR">总监</option>
+                                            <option value="SMG">高级经理</option>
+                                            <option value="MG">经理</option>
+                                            <option value="GV">主管</option>
+                                            <option value="TLD">组长</option>
+                                            <option value="STF">职员</option>
+                                        </select>
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_email" class="ui-label" >邮箱：</label>
+                                        <input type="text" class="ui-input" id="user_email">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">请填写您有效的E-MAIL地址，该地址可以用于找回密码，收取papago重要通知等</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_phone" class="ui-label" >手机：</label>
+                                        <input type="text" class="ui-input" id="user_phone">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">填入正确的国内手机号码（11位），以便验证手机号码</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_tel" class="ui-label" >固定电话：</label>
+                                        <input type="text" class="ui-input" id="user_tel">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain">格式：国家代码-区-电话号码- 分机（非必填），如：086-0755-33936114-6071</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="user_qq" class="ui-label" >QQ：</label>
+                                        <input type="text" class="ui-input" ud="user_qq">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                </div>
+                                <div class="register-form-row">
+                                    <h3 class="title">公司名称和主营业务</h3>
+                                    <div class="ui-form-item">
+                                        <label class="ui-label">公司类型：</label>
+                                        <span class="span">
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp1">
+                                            <label for="tp1" class="label" checked="checked">制造商</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp2">
+                                            <label for="tp2" class="label">代理商</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp3">
+                                            <label for="tp3" class="label">经销商</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp4">
+                                            <label for="tp4" class="label">批发商</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp5">
+                                            <label for="tp5" class="label">个体工商户</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp6">
+                                            <label for="tp6" class="label">贸易公司</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp7">
+                                            <label for="tp7" class="label">持有自主品牌制造商</label>
+                                            <input type="radio" name="ct" value="" class="ui-radio" id="tp8">
+                                            <label for="tp8" class="label">其他</label>
+                                        </span>
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="company_name" class="ui-label" >公司名称：</label>
+                                        <input type="text" class="ui-input" id="company_name">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">请填写企业名称，个体经营者请填写营业执照上的姓名，并标注个体经营，如(李四)</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="company_address" class="ui-label" >公司所在地：</label>
+                                        <input type="text" class="ui-input" id="company_address">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="operate_address" class="ui-label" >经营地址：</label>
+                                        <input type="text" class="ui-input" id="operate_address">
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain">请详细填写贵公司的经营地址</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="idcode" class="ui-label" >厂商识别代码：</label>
+                                        <input type="text" class="ui-input" id="idcode">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain">企业中国物品编码中心代码</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label class="ui-label" >主营类别：</label>
+                                        <select name="" id="operate_class" class="">
+                                            <option value="12089">母婴用品</option>
+                                            <option value="12154">营养健康</option>
+                                            <option value="12195">彩妆护肤</option>
+                                            <option value="12248">包袋鞋靴</option>
+                                            <option value="12308">服装户外</option>
+                                            <option value="12374">手表饰品</option>
+                                            <option value="12415">数码家居</option>
+                                            <option value="12704">非申报品类</option>
+                                        </select>
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="operate_product" class="ui-label" >主营品牌或产品：</label>
+                                        <textarea name="" id="operate_product" class="ui-textarea"></textarea>
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                </div>
+                                <div class="register-form-row">
+                                    <h3 class="title">银行收款信息</h3>
+                                    <div class="ui-form-item">
+                                        <label for="bank_truename" class="ui-label" >收款人真实姓名：</label>
+                                        <input type="text" class="ui-input">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="bank_name" class="ui-label" >开户银行名称：</label>
+                                        <select name="" id="" class="">
+                                            <option value="">请选择</option>
+                                            <option value="PEACE">平安银行</option>
+                                            <option value="RCB">农村商业银行</option>
+                                            <option value="CMBC">招商银行</option>
+                                            <option value="ABC">中国农业银行</option>
+                                            <option value="CBC">中国建设银行</option>
+                                            <option value="ICBC">中国工商银行</option>
+                                            <option value="BC">中国银行</option>
+                                            <option value="BCMM">交通银行</option>
+                                            <option value="CNPT">中国邮政</option>
+                                            <option value="SDB">深圳发展银行</option>
+                                            <option value="CIB">兴业银行</option>
+                                            <option value="CDB">国家开发银行</option>
+                                            <option value="SPDB">上海浦东发展银行</option>
+                                            <option value="EGB">恒丰银行</option>
+                                            <option value="CMSZ">民生银行</option>
+                                            <option value="GBD">广东发展银行</option>
+                                            <option value="CEBB">中国光大银行</option>
+                                            <option value="ECTC">中信银行</option>
+                                            <option value="HXB">华夏银行</option>
+                                        </select>
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="bank_address" class="ui-label" >开户银行所在地：</label>
+                                        <input type="text" class="ui-input" id="bank_address">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="bank_branch" class="ui-label" >开户行支行名称：</label>
+                                        <input type="text" class="ui-input">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="bank_account" class="ui-label" >银行帐号：</label>
+                                        <input type="text" class="ui-input" id="bank_account">
+                                        <span class="ui-form-required"></span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label class="ui-label" >公司营业执照：</label>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker">
+                                                    <div class="picker-inner" id="J_picker_license">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input id="license" type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <span class="ui-form-required">*</span>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <a id="J_showmore" class="" href="javascript:;">更多</a>
+                                    </div>
+                                    <div class="ui-form-item fn-hide">
+                                        <label for="" class="ui-label" >公司LOGO：</label>
+                                        <div class="register-upload">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_logo">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form-item fn-hide">
+                                        <label for="" class="ui-label" >品牌授权：</label>
+                                        <div class="register-upload">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_licensed">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ui-form-item fn-hide">
+                                        <label for="" class="ui-label" >品牌认证资料：</label>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_authen1">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_authen2">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_authen3">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_authen4">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="register-upload ui-inlineblock">
+                                            <div class="ui-upload-thumb">
+                                                <div class="picker" id="J_picker_authen5">
+                                                    <div class="picker-inner">
+                                                        <div class="picker-inner-bd">
+                                                            <span class="pick"><i class="iconfont">&#xe601;</i>上传</span>
+                                                            <span class="pick">点击选择图片</span>
+                                                        </div>
+                                                    </div>
+                                                    <input type="hidden" value="">
+                                                </div>
+                                                <img class="photo" src="../dist/images/blank.gif" alt="">
+                                            </div>
+                                        </div>
+                                        <span class="ui-form-explain">可上传最多5张图片</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="code" class="ui-label">验证码：</label>
+                                        <input type="text" maxlength="4" id="code" class="ui-input">
+                                        <img id="J_code_img" class="ui-code-img" src="../photos/code.png" alt="验证码">
+                                        <span class="ui-form-required">*</span><span class="ui-form-explain">请输入4位数字的验证码</span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <label for="rule">
+                                            <input class="ui-checkbox" id="rule" value="" type="checkbox" checked="checked">
+                                            我同意<a class="ui-text-link" href="">《papago供应商协议》</a>    
+                                        </label>
+                                        <span class="ui-form-explain"></span>
+                                    </div>
+                                    <div class="ui-form-item">
+                                        <button id="J_submitbtn" class="submit ui-button ui-button-lorange">提交</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="s-m-footer">
+            <div class="s-m-footer-inner ui-container">
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/s_register.js"></script>
+    <script>register.step1();</script>
+</body>
+</html>

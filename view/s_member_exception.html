@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>订单详情-啪啪购</title>
+    <link href="http://www.papago.hk" rel="dns-prefetch" />
+    <link rel="shortcut icon" href="http://www.papago.hk/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/common.css">
+    <link rel="stylesheet" href="../dist/css/member.css">
+</head>
+<body>
+    <div class="ui-page-wrap s-member">
+        <div id="J_global_header" class="s-m-header m-header">
+            <div class="m-header-inner ui-container">
+                <div class="m-header-logo-wrap">
+                    <h1 class="m-header-logo" id="J_mlogo">
+                        <a href="/"><img src="../dist/images/s_logo.png" alt="啪啪购"></a>
+                    </h1>
+                </div>
+                <div class="m-header-right">
+                    <div class="m-header-info">
+                        <ul class="m-header-info-list">
+                            <li class="m-header-info-item">
+                                您好，[<a href="">罗豪鑫</a>]
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">个人中心</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href=""><i class="icon-message iconfont">&#xe617;</i>消息</a>
+                            </li>
+                            <li class="m-header-info-item">
+                                <a class="link" href="">退出</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-page-body exception">
+            <div class="member-wrap">
+                <div class="ui-container">
+                    <div class="member-body fn-clear">
+                        <div class="member-left">
+                            <div class="member-sidenav">
+                                <div class="member-sidenav-head member-head">
+                                    <h3 class="member-head-title"><a href="">用户中心</a></h3>
+                                </div>
+                                <div class="member-sidenav-body" id="J_member_sidenav">
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe602;</i>我的产品
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品刊登</a>
+                                                </li>                                 
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">商品管理</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe619;</i>订单管理
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item active">
+                                                    <a class="link" href="">订单查询</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="member-sidenav-group">
+                                        <div class="member-sidenav-group-hd ui-switchable-trigger" data-role="trigger">
+                                            <h3 class="member-sidenav-title">
+                                                <i class="iconfont">&#xe61d;</i>我的账户
+                                            </h3>
+                                        </div>
+                                        <div class="member-sidenav-group-bd ui-switchable-panel" data-role="panel">
+                                            <ul class="member-sidenav-list">
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="s_member_account_management_base.html">个人信息管理</a>
+                                                </li>
+                                                <li class="member-sidenav-item">
+                                                    <a class="link" href="">我的消息</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>         
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-right">
+                            <div class="member-main">
+                                <div class="member-main-head member-head fn-clear">
+                                    <h3 class="member-head-title">异常订单详情</h3>
+                                </div>
+                                <div class="member-order-detail member-main-inner ui-content-padding">
+                                    <div class="detail-section">
+                                        <div class="detail-section-hd"><h3 class="title">商品清单</h3></div>
+                                        <div class="detail-section-bd ui-table-container">
+                                            <table class="ui-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th width="40%">商品名称</th>
+                                                        <th width="20%">商品编号</th>
+                                                        <th width="10%">属性</th>
+                                                        <th width="10%">应付价(RMB)</th>
+                                                        <th width="10%">实付价(RMB)</th>
+                                                        <th>数量</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ui-panel-mini ui-panel">
+                                                                <div class="ui-panel-thumb">
+                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                    </a>    
+                                                                </div>
+                                                                <div class="ui-panel-text">
+                                                                    <div class="ui-panel-text-inner">
+                                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                        </a>    
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </td>
+                                                        <td>953001-P-201510</td>
+                                                        <td>规格：1盒</td>
+                                                        <td>55.00</td>
+                                                        <td>--</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="ui-panel-mini ui-panel">
+                                                                <div class="ui-panel-thumb">
+                                                                    <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                        <img src="http://sandbox.seller.papago.hk/imagesupload/23947/small/00014-001.jpg" alt="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                    </a>    
+                                                                </div>
+                                                                <div class="ui-panel-text">
+                                                                    <div class="ui-panel-text-inner">
+                                                                        <a href="" title="Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF">
+                                                                            Casio 男士手表 G-SHOCK MT-G TRIPLE G RESIST MTG-S1000D-1AJF
+                                                                        </a>    
+                                                                    </div>
+                                                                </div>    
+                                                            </div>
+                                                        </td>
+                                                        <td>953001-P-201510</td>
+                                                        <td>规格：1盒</td>
+                                                        <td>55.00</td>
+                                                        <td>--</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                </tbody>    
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="detail-section" id="J_historys">
+                                        <div class="detail-section-hd"><h3 class="title">异常信息</h3></div>
+                                        <div class="detail-section-bd historys">
+                                            <div class="ui-box ui-box-container">
+                                                <div class="ui-box-head">
+                                                    <span class="trigger"></span>
+                                                    <h4 class="ui-box-head-title">身份证异常</h4>
+                                                </div>
+                                                <div class="ui-box-content">
+                                                    <ol class="historys-list">
+                                                        <li>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                            <p class="infos"><span>时间：2016/07/14 23:33</span><span>处理人：罗豪鑫</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                            <p class="infos"><span>时间：2016/07/15 00:10</span><span>处理人：罗豪鑫</span></p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ui-box ui-box-container">
+                                                <div class="ui-box-head">
+                                                    <span class="trigger"></span>
+                                                    <h4 class="ui-box-head-title">身份证异常</h4>
+                                                </div>
+                                                <div class="ui-box-content">
+                                                    <ol class="historys-list">
+                                                        <li>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                            <p class="infos"><span>时间：2016/07/14 23:33</span><span>处理人：罗豪鑫</span></p>
+                                                        </li>
+                                                        <li>
+                                                            <p class="desc">身份证与本人不相匹配</p>
+                                                            <p class="infos"><span>时间：2016/07/15 00:10</span><span>处理人：罗豪鑫</span></p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-m-footer">
+            <div class="s-m-footer-inner ui-container">
+                <p class="copyright">&copy;啪啪购 2014, 版权所有 粤ICP备14073754号-3</p>
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/lib.js"></script>
+    <script src="../dist/js/member.js"></script>
+    <script>
+        $(function(){
+            $('#J_historys').on('click', '.trigger', function(){
+                var $this = $(this),
+                    $box = $this.closest('.ui-box'),
+                    panel = $this.closest('.ui-box').find('.ui-box-content');
+
+                panel.slideToggle(function(){
+                    $this.toggleClass('close');
+                });
+
+            });
+        });
+    </script>
+</body>
+</html>

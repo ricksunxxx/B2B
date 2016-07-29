@@ -1,0 +1,221 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+
+.account-nav {
+	margin: 30px 0 50px 0;
+	border-bottom: 1px solid $border-color-normal;
+
+	li {
+		position: relative;
+		float: left;
+
+		.icon-arrow {
+			display: none;
+			position: absolute;
+			left: 50%;
+			bottom: -4px;
+			width: 12px;
+			height: 10px;
+			padding: 0;
+			margin-left: -6px;
+			line-height: 10px;
+			color: $border-color-normal;
+			background: $bg-color-white;
+			text-align: left;
+			font-size: $font-size-xn;
+			text-indent: -1px;
+			overflow: hidden;
+		}
+
+		a {
+			display: block;
+			padding: 0 20px;
+			height: 40px;
+			line-height: 40px;
+			color: $text-color-normal;
+
+			&:hover {
+				text-decoration: none;
+				color: #0ae;
+			}
+		}
+
+		&.active {
+			border-bottom: 2px solid #f60;
+			margin-bottom: -1px;
+			a {
+				font-size: $font-size-xn;
+				color: #F60;
+			}
+		}
+	}
+}
+
+.account-form {
+	padding: 0 20px 40px;
+
+	.ui-input {
+		width: 280px;
+	}
+	
+	.ui-button.submit {
+		width: 300px;
+	}
+
+	.ui-radio,
+	.ui-checkbox {
+		margin: 8px 3px 0 0;
+	}
+
+	.label {
+		display: inline-block;
+		margin-top: 4px;
+		margin-right: 20px;
+		font-size: $font-size-xn;
+		vertical-align: top;
+	}
+
+	.label.other {
+		margin-right: 0;
+	}
+
+	.label.other ~ .ui-input {
+		width: 180px;
+		border: 0;
+		border-bottom: 1px solid $border-color-normal;
+	}
+
+	.ui-textarea {
+		min-width: 400px;
+	    max-width: 400px;
+	    min-height: 100px;
+	    max-height: 100px;
+	    vertical-align: middle;
+	}
+}
+
+.account-form-row {
+	padding-bottom: 40px;
+
+	.title {
+		margin-bottom: 20px;
+		padding: 0 0 10px 20px;
+		font-size: 18px;
+		border-bottom: 1px solid $border-color-normal;
+	}
+}
+
+.account-form-sub-row {
+	padding-left: 40px;
+
+	.sub-title {
+		font-size: $font-size-xn;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px dashed $border-color-normal;
+	}
+}
+
+.photo-thumb {
+	.left,
+	.right {
+		float: left;
+	}
+
+	.ui-upload-thumb {
+		width: 300px;
+		height: 180px;
+		margin-right: 10px;
+		text-align: center;
+	}
+}
+.account-upload {
+	.ui-upload-thumb {
+		width: 300px;
+		height: 180px;
+		line-height: 176px; // 动态插入时垂直居中用
+
+		.picker {
+			.picker-inner {
+				width: 120px;
+				height: 32px;
+				margin: 68px auto 0;
+			}
+
+			.pick {
+				line-height: 32px;
+				font-size: $font-size-md;
+
+				.iconfont {
+					font-size: 22px;
+				}
+			}
+
+			&:hover,
+			&.hover {
+				.picker-inner-bd {
+					margin-top: -32px;
+				}
+			}
+		}
+	}
+}
+
+.account-form-mobile,
+.account-form-contact {
+	.ui-form {
+		padding-top: 50px;
+	}
+}
+.account-form-mobile,
+.account-form-password,
+.account-form-contact {
+	.submit.ui-button {
+		width: 120px;
+	}
+}
+
+.text-mobile {
+	font-size: 18px;
+    font-weight: normal;
+    color: $text-color-normal;
+}
+.member-api {
+	padding-top: 20px;
+}
+
+.member-api-table {
+	margin-top: 30px;
+	tbody {
+		th {
+			width: 50%;
+			text-align: center;
+		}
+	}
+
+	.info-list {
+		padding: 10px 0;
+
+		li {
+			padding: 5px 0;
+		}
+		.label {
+			display: inline-block;
+			width: 212px;
+			color: $text-color-dark;
+			text-align: right;
+		}
+
+		&.config {
+			.label {
+				width: 132px;
+			}
+		}
+	}
+}
+
+.member-api-form {
+	.submit.ui-button {
+		width: 200px;
+	}
+}

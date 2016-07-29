@@ -1,0 +1,23 @@
+/* alice.label 样式模块 */
+
+.ui-label {
+    float: left;
+    width: 170px;
+    margin-left: -180px;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.ui-form-required {
+    width: 4px;
+    color: #FF0000;
+    // font-family: SimSun;
+    font-size: 12px;
+    margin: 0 6px;
+    display: inline-block;
+}
+
+input.ui-checkbox {
+    vertical-align: baseline;
+}

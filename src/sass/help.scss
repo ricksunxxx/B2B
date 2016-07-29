@@ -1,0 +1,280 @@
+@import "helpers/variables";
+@import "helpers/placeholder";
+@import "pages/member";
+
+/*
+ 【帮助中心】
+ 全部子页面都用此样式
+ 前面是共享样式
+ 后面是各个子页面的样式
+*/
+
+//----begin 共享样式------
+h3.member-head-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.member-sidenav-item .link {
+    padding-left: 24px;
+}
+
+h3.member-sidenav-title {
+    &:after {
+        display: none;
+    }
+    .iconfont {
+        float: left; //解决下面的a标签有类似margin-top的距离
+    }
+    a {
+        display: inline-block;
+        width: 107px;
+        text-decoration: none;
+        font-weight: bold;
+        padding-left: 5px;
+        &:link {
+            color: #666;
+        }
+    }
+    a.active {
+        color: #0ae;
+    }
+    .title-icon:after {
+        font-family: "iconfont";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 40px;
+        line-height: 40px;
+        content: '\e630';
+        color: #999;
+        text-align: center;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+    }
+    .ui-switchable-active:after {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+
+//兼容IE8
+.ie8 {
+    h3.member-sidenav-title {
+        .ui-switchable-active:after {
+            content: '\e631';
+        }
+    }
+}
+
+.help-bread-nav {
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.help-bread-list {
+    margin-left: -20px;
+    .help-bread-list-item {
+        float: left;
+        a {
+            text-decoration: none;
+            &:link {
+                color: #666;
+            }
+        }
+        &:before {
+            content: '\3E';
+            font-family: \5b8b\4f53;
+            color: #ccc;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.help-container {
+    padding: 20px;
+}
+
+.ui-box-content {
+    padding: 20px;
+}
+
+.help-ui-box-head {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    .head-title {
+        color: #333;
+        font-size: 22px;
+    }
+    .head-text {
+        margin-right: 10px;
+        color: #808080;
+    }
+}
+
+.ui-box-content {
+    .step-title {
+        color: #656565;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .step {
+        line-height: 25px;
+    }
+    .step-img {
+        img {
+            width: 864px;
+            border: 1px solid #4d4d4d;
+        }
+    }
+    ul li {
+        line-height: 25px;
+    }
+    .warming {
+        color: #f00;
+        line-height: 25px;
+    }
+}
+
+//----end 共享样式------
+
+/*
+ 以下为各个子页面的样式
+*/
+
+//下单支付
+.help-order-pay {
+    .except-img {
+        img {
+            border: 1px solid #4d4d4d;
+        }
+    }
+}
+
+//选品刊登
+.help-publish {
+    padding-bottom: 15px;
+}
+
+//注册及登录
+.help-register-login {
+    padding-bottom: 15px;
+}
+
+//关于啪啪购
+.help-about-ppg {
+    .mid-setion {
+        padding: 20px 0;
+    }
+    .intro-title {
+        color: #656565;
+        font-size: 14px;
+        font-weight: bold;
+        text-indent: 24px;
+    }
+    .intro-list {
+        li {
+            text-indent: 2em;
+        }
+    }
+    .intro-text {
+        text-indent: 2em;
+        line-height: 25px;
+    }
+}
+
+//验货签收
+.help-inspection-sign {
+    .inner-des {
+        padding: 20px 0;
+        line-height: 25px;
+    }
+}
+
+//关税说明
+.help-tariffs-show {
+    .mid-setion {
+        padding: 20px 0;
+    }
+    p {
+        line-height: 25px;
+    }
+}
+
+//预定费及仓储费
+.help-booking-storage-fee {
+    ul {
+        padding-bottom: 20px;
+    }
+    .ui-table td {
+        border: 1px solid #d9d9d9;
+    }
+}
+
+//订单操作费 
+.help-order-operation {}
+
+.help-recharge-withdrawals {
+    .warming {
+        padding: 20px 0;
+    }
+    .warming-title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+//退换货政策
+.help-return-exchange {
+    .mid-setion {
+        padding: 20px 0;
+    }
+}
+
+//售后赔付政策
+.help-after-sale-pay {
+    .mid-setion {
+        padding: 20px 0;
+    }
+    .inner-setion {
+        padding-bottom: 10px;
+    }
+}
+
+//常见问题
+.help-commom-queston {
+    padding-bottom: 0;
+    .help-setion {
+        padding-bottom: 20px;
+        p {
+            line-height: 25px;
+        }
+    }
+}
+
+//联系我们
+.help-contact-us {
+    .wx-icon {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #CCC;
+        margin: 6px 0 -5px 0;
+    }
+}
+
+//公告
+.help-diplay-head {
+    line-height: 48px;
+}
+
+.help-display-body {
+    padding-bottom: 35px;
+    ul li {
+        padding: 15px 0;
+        border-bottom: 1px dashed #ddd;
+    }
+}

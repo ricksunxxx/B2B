@@ -1,0 +1,29 @@
+
+.ui-autocomplete {
+
+	.ui-autocomplete-content {
+		padding: 10px;
+		background: #fff;
+		border: 1px solid #ddd;
+	}
+	.ui-autocomplete-item {
+		padding: 0 5px;
+		line-height: 28px;
+		border-bottom: 1px solid #efefef;
+		cursor: pointer;
+
+		&:hover,
+		&.ui-autocomplete-item-hover {
+			background: #efefef;
+		}
+	}
+
+	.ui-autocomplete-footer {
+		padding-top: 5px;
+		text-align: right;
+		color: #999;
+		strong {
+			color: #666;
+		}
+	}
+}

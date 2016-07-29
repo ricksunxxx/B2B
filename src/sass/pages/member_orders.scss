@@ -1,0 +1,194 @@
+@import "../helpers/variables";
+@import "../helpers/placeholder";
+//订单批量新增
+.batch-add-statement {
+    background: #e5f2f8;
+    border: 1px solid #b2e2ea;
+    .batch-add-statement-inner {
+        position: relative;
+        padding: 20px;
+        padding-left: 50px;
+        dt {
+            font-weight: bold;
+            font-size: $font-size-xn;
+        }
+        dd {
+            line-height: $line-height-lg;
+        }
+        i {
+            position: absolute;
+            left: 20px;
+            top: 14px;
+            font-size: 20px;
+            color: #28B1FD;
+        }
+    }
+}
+
+.upload-file-wrap-inner {
+    .ui-form-item {
+        padding: 20px 5px 20px 108px;
+    }
+    .upload-file-statement {
+        position: relative;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        dt {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        dd {
+            line-height: $line-height-lg;
+            a {
+                color: #129DD4;
+            }
+            span {
+                color: #f60;
+            }
+        }
+        i {
+            position: absolute;
+            left: 20px;
+            top: -5px;
+            font-size: 20px;
+            color: #28B1FD;
+        }
+    }
+}
+
+//我的订单
+.my-order-list {
+    .member-form-query {
+        .ui-form-item {
+            .ui-select {
+                width: 147px;
+            }
+            .order-query-label {
+                margin-left: -87px !important;
+                padding-top: 0;
+                padding-right: 0px;
+                margin-right: 0;
+                width: 87px !important;
+                .ui-select {
+                    width: 87px;
+                }
+            }
+        }
+        .time {
+            margin-left: -14px;
+        }
+    }
+    .btn-single-pay {
+        margin-right: 20px;
+        margin-bottom: 3px;
+    }
+}
+
+.my-order-group {
+    .my-order-group-hd {
+        margin-top: -1px;
+        background: #efefef;
+        border-top: 1px solid #ddd;
+        .head-one {
+            padding-left: 10px;
+            height: 32px;
+            line-height: 32px;
+            border-bottom: 1px solid #ddd;
+            .item {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .ui-checkbox {
+                vertical-align: middle;
+            }
+        }
+        .head-two {
+            padding-left: 47px;
+            height: 32px;
+            line-height: 32px;
+            border-bottom: 1px solid #ddd;
+            // font-weight: bold;
+            .item {
+                display: inline-block;
+                margin-right: 20px;
+            }
+            .fn-right {
+                a {
+                    color: #0ae;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .my-order-group-bd {
+        .order-imgs-list {
+            overflow: hidden;
+            height: 96px;
+            .img-item {
+                display: table;
+                float: left;
+                width: 60px;
+                height: 60px;
+                border: 1px solid #ddd;
+                margin: 15px 0 0 15px;
+                padding: 2px;
+                a {
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                    width: 60px;
+                    height: 60px;
+                    img {
+                        width: auto;
+                        height: auto;
+                        max-width: 100%;
+                        max-height: 100%;
+                        vertical-align: middle;
+                    }
+
+                    &.more {
+                        background: #f4f4f4;
+                        &:hover {
+                            background: #efefef;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//异常订单查询
+.abnormal-orders {
+    .ui-select {
+        width: 146px;
+    }
+    .ui-table {
+        border: none;
+    }
+    .member-tabs-bd {
+        border-top: 1px solid #D9D9D9;
+    }
+}
+
+//分销商 订单详情
+.member-order-detail .detail-section a.pay-now {
+    color: #0ae;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.member-order-detail {
+    .detail-section {
+        .ui-panel-mini {
+            height: 62px;
+            overflow: hidden;
+        }
+    }
+}
+.fxs-member-order-detail {
+    border: 1px solid #d9d9d9 !important;
+    .red-text {
+        color: #FF0000;
+        padding-left: 8px;
+    }
+}
